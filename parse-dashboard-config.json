@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "serverURL": "https://panda-tinder.herokuapp.com/parse",
+      "appId": "myAppId",
+      "masterKey": "Pandakey123",
+      "appName": "panda-tinder"
+    }
+  ]
+}
