@@ -50,5 +50,9 @@
             "PACKAGE_NAME": "com.agenciafoccus.photogram"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.agenciafoccus.photogram"
+        }
+    }
 }

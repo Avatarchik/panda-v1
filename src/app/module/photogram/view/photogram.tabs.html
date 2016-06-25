@@ -1,4 +1,4 @@
-<ion-view>
+<!--<ion-view>
 
   <ion-nav-bar class="bar bar-positive bar-mop" align-title="left">
     <ion-nav-back-button></ion-nav-back-button>
@@ -28,4 +28,65 @@
 
   </ion-tabs>
 
-</ion-view>
+</ion-view>-->
+
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar bar-positive bar-mop" align-title="left">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <!-- TABS -->
+    <ion-tabs class="tabs-dark tabs-photogram">
+
+    <ion-tab title="{{ ::'PHOTOGRAM.TITLE.HOME' | translate }}" icon="ion-android-home" ui-sref="photogram.home">
+      <ion-nav-view name="tabHome"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="{{ ::'PHOTOGRAM.TITLE.SEARCH' | translate }}" icon="ion-search" ui-sref="photogram.search.grid">
+      <ion-nav-view name="tabSearch"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="{{ ::'PHOTOGRAM.TITLE.SHARE' | translate }}" icon="ion-camera" class="middle" ng-click="vm.postPhoto()">
+      <ion-nav-view name="tabCapture"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="{{ ::'PHOTOGRAM.TITLE.ACTIVITY' | translate }}" icon="ion-chatbubble" ui-sref="photogram.activity">
+      <ion-nav-view name="tabActivity"></ion-nav-view>
+    </ion-tab>
+
+
+    <ion-tab title="{{ ::'PHOTOGRAM.TITLE.PROFILE' | translate }}" icon="ion-person" ui-sref="photogram.account">
+      <ion-nav-view name="tabProfile"></ion-nav-view>
+    </ion-tab>
+
+  </ion-tabs>
+
+  </ion-side-menu-content>
+
+   <!-- Side Menu (left) -->
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-positive">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ul class="list">
+        <!-- Note each link has the 'menu-close' attribute so the menu auto closes when clicking on one of these links -->
+        <a ui-sref="menu.profile" class="item item-icon-left" menu-close><i class="icon ion-person"></i> {{'MENU.PROFILE' | translate}}</a>
+        <a ui-sref="menu.home" class="item item-icon-left" menu-close><i class="icon ion-person-stalker"></i> {{'MENU.MATCHES' | translate}}</a>
+        <a ui-sref="menu.chats" class="item item-icon-left" menu-close><i class="icon ion-ios-chatbubble-outline"></i> {{'MENU.CHAT' | translate}} <span ng-show="unreadChats > 0" class="badge badge-assertive nav-icon-badge">{{unreadChats}}</span></a>
+        <a ui-sref="menu.likedMe" class="item item-icon-left" menu-close><i class="icon ion-ios-checkmark"></i> {{'MENU.LIKED_ME' | translate}}</a>
+        <a ui-sref="menu.discovery" class="item item-icon-left" menu-close><i class="icon ion-ios-search-strong"></i> {{'MENU.DISCOVERY' | translate}}</a>
+        <a ui-sref="menu.location" class="item item-icon-left" menu-close><i class="icon ion-ios-location-outline"></i> {{'MENU.LOCATION' | translate}}</a>
+        <a ui-sref="menu.settings" class="item item-icon-left" menu-close><i class="icon ion-ios-gear"></i> {{'MENU.SETTINGS' | translate}}</a>
+        <a ui-sref="menu.contact" class="item item-icon-left" menu-close><i class="icon ion-ios-email"></i> {{'MENU.CONTACT' | translate}}</a>
+      </ul>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

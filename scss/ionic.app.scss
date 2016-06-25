@@ -10,7 +10,7 @@ $light: #fff !default;
 $stable: #f8f8f8 !default;
 $positive: $primaryColor !default;
 
- //$positive : #4B84FA !default;
+//$positive : #4B84FA !default;
 //$positive : #40a4c4 !default;
 //$positive : #387ef5 !default;
 $calm: darken($positive, 20) !default;
@@ -36,3 +36,24 @@ $ionicons-font-path: '../fonts' !default;
    all your sass files automatically */
 // injector
 // endinjector
+
+.view-login {
+    .user-head {
+        .tabs-top {
+            .tab-nav.tabs { 
+                a {
+                    span.tab-title.ng-binding{
+                        top: 0!important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menu { 
+    .bar.bar-header {
+        height: 45px!important;
+
+    }
+}

@@ -12,7 +12,6 @@
     <ion-refresher ng-if="!vm.loading" on-refresh="loadMore(true)"></ion-refresher>
 
     <photogram-loading loading="vm.loading"></photogram-loading>
-
     <photogram-photo-list profile="true" photogram="vm.data" loading="vm.loading"></photogram-photo-list>
 
     <div class="center-ico" ng-if="vm.empty">
