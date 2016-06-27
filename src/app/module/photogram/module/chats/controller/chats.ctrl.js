@@ -11,9 +11,9 @@
    * */
   angular
     .module('app.photogram')
-    .controller('SwipeCtrl', SwipeController);
+    .controller('ChatsCtrl', ChatsController);
     
-      function SwipeController( $rootScope, AppConfig, $state) { 
+      function ChatsController( $rootScope, AppConfig, $state) { 
           
           var vm = this;
           
