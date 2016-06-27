@@ -121,5 +121,16 @@
     "PERSIAN": "Persian",
     "GERMAN": "German",
     "TURKISH": "Turkish"
+  },
+  "MENU": {
+      "TITLE": "Menu",
+      "PROFILE": "Profile",
+      "MATCHES": "Find Matches",
+      "CHAT": "Chat",
+      "LIKED_ME": "Liked Me",
+      "DISCOVERY": "Discovery Preferences",
+      "LOCATION": "Location",
+      "SETTINGS": "App Settings",
+      "CONTACT": "Contact Us"
   }
 }

@@ -57,3 +57,25 @@ $ionicons-font-path: '../fonts' !default;
 
     }
 }
+
+/* Over-ride styles for the multi-slider */
+[slider], slider { 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    div.bar{
+        position: relative;
+        z-index: -1;
+        .selection {
+            top: -1px;
+            background: $primaryColor;
+        }
+    }
+
+    div.handle{
+        width: 25px;
+        height: 25px;  
+    }
+    div.handle:after {
+        display: none; /* This gets rid of the dot in the slider drag handles */
+    }
+}

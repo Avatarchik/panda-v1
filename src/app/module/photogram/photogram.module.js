@@ -12,7 +12,8 @@
       'app.feedback',
       'app.share',
       'app.home',
-      'app.search'
+      'app.search',
+      'app.discover'
     ]);
 
 })();

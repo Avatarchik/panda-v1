@@ -20,6 +20,8 @@
       'app.loading',
       'app.user',
       'app.photogram',
+      'app.swipe',
+      'ui.slider'
     ]);
 
 })();

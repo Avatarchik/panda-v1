@@ -10,5 +10,6 @@
       'ion-notify',
       'ngCache',
       'ngParse',
+      'ui.slider'
     ]);
 })();
