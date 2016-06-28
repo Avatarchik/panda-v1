@@ -1,24 +1,26 @@
 (function () {
-  'use strict';
-  var path = 'app/module/photogram/module/swipe';
+    'use strict';
 
-  angular
-    .module('app.swipe')
-    .config(addRoute);
+    angular
+            .module('app.swipe')
+            .config(configRoutes);
 
-  function addRoute($stateProvider, $translatePartialLoaderProvider) {
-    //$translatePartialLoaderProvider.addPart(path);
+    var path = 'app/module/photogram/module/swipe';
 
-    $stateProvider
-      .state('photogram.swipe', {
-        url: '/swipe',
-        views: {
-          tabHome: {
-            templateUrl: path + '/view/swipe.html'
-          }
-        }
-      });
+    function configRoutes($stateProvider) {
 
-  }
+        $stateProvider
+                .state('photogram.swipe', {
+                    url: '/swipe',
+                    views: {
+                        tabHome: {
+                            controller: 'SwipeCtrl',
+                            controllerAs: 'vm',
+                            templateUrl: path + '/view/swipe.html'
+                        }
+                    }
+                });
+
+    }
 
 })();

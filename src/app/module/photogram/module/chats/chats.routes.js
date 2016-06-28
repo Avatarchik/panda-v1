@@ -14,6 +14,8 @@
         url: '/chats',
         views: {
           tabHome: {
+              controller: 'ChatsCtrl',
+            controllerAs: 'vm',
             templateUrl: path + '/view/chats.html'
           }
         }

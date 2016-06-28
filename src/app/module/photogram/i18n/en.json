@@ -1,136 +1,289 @@
 {
-  "HOME": {
-    "TITLE": {
-      "NO_PHOTO": "No photo"
-    }
-  },
-  "ACTIVITY": {
-    "TITLE": "Activities",
-    "FORM": {
-      "PLACEHOLDER": "Send a message..."
-    }
-  },
-  "DIRECT": {
-    "TITLE": "Direct Messages",
-    "FORM": {
-      "PLACEHOLDER": "Send a message..."
+    "HOME": {
+        "TITLE": {
+            "NO_PHOTO": "No photo"
+        }
     },
-    "BUTTON": {
-      "PULL": "Pull to refresh..."
-    }
-  },
-  "FEEDBACK": {
-    "TITLE": "Feedback",
-    "SUBJECT": "Subject",
-    "COMPLAINT": "Complaint",
-    "BUG": "Bug",
-    "SUGGESTION": "Suggestion",
-    "MESSAGE": "Your message"
-  },
-  "SEARCH": {
-    "TITLE": "Search",
-    "TITLE_LIST": "Seach in List",
-    "TITLE_MAP": "Seach in Map",
-    "FORM": {
-      "INPUT": "Search..."
-    }
-  },
-  "SHARE": {
-    "TITLE": "Post photo",
-    "FORM": {
-      "SHARE_IN": "Share in",
-      "LEGEND": "Write a Legend",
-      "LOCATION": "Location"
-    }
-  },
-  "PHOTOGRAM": {
-    "TITLE": {
-      "HOME": "Home",
-      "SEARCH": "Search",
-      "SHARE": "Share",
-      "ACTIVITY": "Activiy",
-      "PROFILE": "Profile",
-      "NO_PHOTO": "No photo",
-      "SHARE_IN": "Share in",
-      "SHARE": "Share"
+    "ACTIVITY": {
+        "TITLE": "Activities",
+        "FORM": {
+            "PLACEHOLDER": "Send a message..."
+        }
     },
-    "FORM": {
-      "TITLE": "Title",
-      "GEOLOCATION": "Location",
-      "ADDCOMMENT": "Add your comment",
-      "LOCATION": "Location",
-      "LEGEND": "Write a Legend"
+    "DIRECT": {
+        "TITLE": "Direct Messages",
+        "FORM": {
+            "PLACEHOLDER": "Send a message..."
+        },
+        "BUTTON": {
+            "PULL": "Pull to refresh..."
+        }
     },
-    "MSG": {
-      "RECENT": "Recent",
-      "NO_PHOTO": "No photo",
-      "NO_POST": "No post"
+    "FEEDBACK": {
+        "TITLE": "Feedback",
+        "SUBJECT": "Subject",
+        "COMPLAINT": "Complaint",
+        "BUG": "Bug",
+        "SUGGESTION": "Suggestion",
+        "MESSAGE": "Your message"
     },
-    "COMMENT": {
-      "TITLE": "Comments",
-      "NO_COMMENTS": "No comments"
+    "SEARCH": {
+        "TITLE": "Search",
+        "TITLE_LIST": "Seach in List",
+        "TITLE_MAP": "Seach in Map",
+        "FORM": {
+            "INPUT": "Search..."
+        }
     },
-    "SETTING": {
-      "TITLE": "Settings",
-      "NOTIFICATION": "Notification"
+    "SHARE": {
+        "TITLE": "Post photo",
+        "FORM": {
+            "SHARE_IN": "Share in",
+            "LEGEND": "Write a Legend",
+            "LOCATION": "Location"
+        }
     },
-    "PROFILE": {
-      "TITLE": {
-        "POST": "Posts",
-        "FOLLOWER": "Followers",
-        "FOLLOWING": "Followings"
-      },
-      "NOTIFICATION": "Notification"
+    "PHOTOGRAM": {
+        "TITLE": {
+            "HOME": "Home",
+            "SEARCH": "Search",
+            "SHARE": "Share",
+            "ACTIVITY": "Activiy",
+            "PROFILE": "Profile",
+            "NO_PHOTO": "No photo",
+            "SHARE_IN": "Share in",
+            "SHARE": "Share"
+        },
+        "FORM": {
+            "TITLE": "Title",
+            "GEOLOCATION": "Location",
+            "ADDCOMMENT": "Add your comment",
+            "LOCATION": "Location",
+            "LEGEND": "Write a Legend"
+        },
+        "MSG": {
+            "RECENT": "Recent",
+            "NO_PHOTO": "No photo",
+            "NO_POST": "No post"
+        },
+        "COMMENT": {
+            "TITLE": "Comments",
+            "NO_COMMENTS": "No comments"
+        },
+        "SETTING": {
+            "TITLE": "Settings",
+            "NOTIFICATION": "Notification"
+        },
+        "PROFILE": {
+            "TITLE": {
+                "POST": "Posts",
+                "FOLLOWER": "Followers",
+                "FOLLOWING": "Followings"
+            },
+            "NOTIFICATION": "Notification"
+        },
+        "LIKES": "Likes",
+        "BUTTON": {
+            "PULL": "Pull to refresh...",
+            "CHANGE_LANGUAGE": "Change language",
+            "SAVE_PROFILE": "Save Profile",
+            "FACEBOOK_LINK": "Link Facebook",
+            "EDIT": "Edit",
+            "REMOVE": "Remove",
+            "PROFILE_EDIT": "EDIT YOUR PROFILE",
+            "REPORT": "Report a Problem",
+            "TERM_POLICY": "Privacy Policy",
+            "TERM_SERVICE": "Terms of Service",
+            "HELP": "Help",
+            "BUY": "Buy Source Code",
+            "ON": "On",
+            "OFF": "Off",
+            "CHANGE_LANGAUGE": "Change language",
+            "COMMENT_ADD": "Add comment",
+            "COMMENT_REMOVE": "Add comment",
+            "LIKE_ADD": "Like",
+            "LIKE_REMOVE": "Unlike",
+            "FORGOT": "Forgot your pass?",
+            "REGISTER": "Register",
+            "LOGIN": "Login",
+            "ENTER_IN": "Enter in",
+            "RESET_PASS": "Reset new password",
+            "UPDATE": "Update",
+            "SAVE": "Save",
+            "NEW": "New",
+            "CREATE": "Create",
+            "TERM_PRIVACY": "Term of use"
+        }
     },
-    "LIKES": "Likes",
-    "BUTTON": {
-      "PULL": "Pull to refresh...",
-      "CHANGE_LANGUAGE": "Change language",
-      "SAVE_PROFILE": "Save Profile",
-      "FACEBOOK_LINK": "Link Facebook",
-      "EDIT": "Edit",
-      "REMOVE": "Remove",
-      "PROFILE_EDIT": "EDIT YOUR PROFILE",
-      "REPORT": "Report a Problem",
-      "TERM_POLICY": "Privacy Policy",
-      "TERM_SERVICE": "Terms of Service",
-      "HELP": "Help",
-      "BUY": "Buy Source Code",
-      "ON": "On",
-      "OFF": "Off",
-      "CHANGE_LANGAUGE": "Change language",
-      "COMMENT_ADD": "Add comment",
-      "COMMENT_REMOVE": "Add comment",
-      "LIKE_ADD": "Like",
-      "LIKE_REMOVE": "Unlike",
-      "FORGOT": "Forgot your pass?",
-      "REGISTER": "Register",
-      "LOGIN": "Login",
-      "ENTER_IN": "Enter in",
-      "RESET_PASS": "Reset new password",
-      "UPDATE": "Update",
-      "SAVE": "Save",
-      "NEW": "New",
-      "CREATE": "Create",
-      "TERM_PRIVACY": "Term of use"
-    }
-  },
-  "LANG": {
-    "ENGLISH": "English",
-    "PORTUGUES": "Portuguese",
-    "PERSIAN": "Persian",
-    "GERMAN": "German",
-    "TURKISH": "Turkish"
-  },
-  "MENU": {
-      "TITLE": "Menu",
-      "PROFILE": "Profile",
-      "MATCHES": "Find Matches",
-      "CHAT": "Chat",
-      "LIKED_ME": "Liked Me",
-      "DISCOVERY": "Discovery Preferences",
-      "LOCATION": "Location",
-      "SETTINGS": "App Settings",
-      "CONTACT": "Contact Us"
-  }
+    "LANG": {
+        "ENGLISH": "English",
+        "PORTUGUES": "Portuguese",
+        "PERSIAN": "Persian",
+        "GERMAN": "German",
+        "TURKISH": "Turkish"
+    },
+    "MENU": {
+        "TITLE": "Menu",
+        "PROFILE": "Profile",
+        "MATCHES": "Find Matches",
+        "CHAT": "Chat",
+        "LIKED_ME": "Liked Me",
+        "DISCOVERY": "Discovery Preferences",
+        "LOCATION": "Location",
+        "SETTINGS": "App Settings",
+        "CONTACT": "Contact Us"
+    },
+    "DISCOVERY_TITLE": "Discovery Preferences",
+    "DISCOVERABLE": "Discoverable",
+    "SHOW_ME": "Show me",
+    "GUYS": "Guys",
+    "GIRLS": "Girls",
+    "SEARCH_DISTANCE": "Search distance",
+    "AGED_BETWEEN": "Aged between",
+    
+    
+    "SETTINGS_TITLE": "App Settings",
+    "NOTIFICATION_SOUND": "Notification Sound",
+    "NEW_MATCH": "New match",
+    "NEW_MESSAGE": "New message",
+    "SHOW_DISTANCES_IN": "Show distances in",
+    
+     "NOT_DISCOVERABLE": "You\"re not discoverable",
+    "ENABLE_DISCOVERY_TO_MEET": "Enable discovery to meet new people nearby",
+    "ENABLE_DISCOVERY": "Enable Discovery",
+    "FINDING_PEOPLE": "Finding people near you",
+    "NO_ONE_NEW": "There\"s no one new around you",
+    "SEARCH_AGAIN": "Search Again",
+    "LIKE": "Like",
+    "NOT_LIKE": "Nope",
+
+    "LOCATION": "Location",
+    "SET_LOCATION": "Set Location",
+    "USE_GPS_LOCATION": "Use GPS location",
+    "GPS_ERROR": "Unable to get GPS location",
+    "SET_MAP_LOCATION": "Please set your location on the map and press save",
+
+    "NO_MATCHES": "You don\"t have any matches yet.",
+    "START_SWIPING": "Start swiping",
+    "MATCHES_LOAD_ERROR" : "Unable to load matches",
+
+    "ITS_A_MATCH": "It\"s A Match",
+    "LIKED_EACH_OTHER": "You and {{name}} have liked each other",
+    "SEND_MESSAGE": "Send Message",
+    "KEEP_PLAYING": "Keep Playing",
+
+    "MATCHED_ON": "You matched on",
+    "REMOVE_MATCH": "Remove match",
+    "MATCH_OPTIONS": "Match options",
+    "REMOVE_MATCH_ERROR": "Error removing match. Try again later",
+    "UNMATCHED": "You were unmatched",
+    "MATCH_REPORTED": "Match reported",
+    "WANT_TO_REMOVE_MATCH": "Do you want to remove this match?",
+
+    "COPY_TEXT": "Copy text",
+    "SAVE_IMAGE": "Save image",
+    "DELETE_MESSAGE": "Delete message",
+    "FAILED_TO_SEND": "Failed to send",
+    "TYPE_YOUR_MESSAGE": "Type your message",
+    "MESSAGE_NOT_SENT": "Message not sent. Try again",
+    "INCOMING_CALL_FROM": "Incoming call from",
+    "HANG_UP": "Hang Up",
+    "WAITING_FOR_REPLY": "Waiting for reply",
+    "VIDEO_SERVICE_ERROR": "An error occurred with the video service",
+    "VIDEO_START_ERROR": "Unable to start the video call",
+
+    "NO_LIKES": "Check back soon, no likes yet",
+
+    "SETTINGS_SAVE_ERROR": "Error saving settings. Try again later",
+    "REQUEST_FAILED": "Request failed",
+
+    "DELETE_ACCOUNT": "Delete your account",
+    
+    "OK": "Ok",
+    "SAVE": "Save",
+    "SEND": "Send",
+    "CANCEL": "Cancel",
+    "DELETE": "Delete",
+    "EDIT": "Edit",
+    "LOADING": "Loading",
+    "REMOVE": "Remove",
+    "REPORT": "Report",
+    "LOG_IN": "Log in",
+    "LOGOUT": "Logout",
+    "EMAIL": "Email",
+    "REGISTER": "Register",
+    "ADMIN": "Admin",
+    "SENDING": "Sending",
+    "RESEND": "Resend",
+    "ACCEPT": "Accept",
+    "REJECT": "Reject",
+    "CALLING": "Calling",
+    "VERSION": "Version",
+
+    "UPDATE_REQUIRED": "Update Required",
+    "UPDATE_REQUIRED_INFO": "We\"ve made some big changes and you\"ll need to update to continue using the app. Click on the Update button below",
+
+    "INVALID_EMAIL_PASSWORD": "Invalid email/password",
+    "ACCOUNT_BANNED": "This account has been disabled",
+    "PULL_TO_REFRESH": "Pull to refresh...",
+    "LANGUAGE": "Language",
+    "PASSWORD": "Password",
+    "RESET_PASSWORD": "Reset password",
+    "PASSWORD_RESET_SENT": "Password reset link emailed",
+    "PASSWORD_LENGTH" : "Password must be at least 6 characters",
+    "INVALID_EMAIL": "Enter a valid email",
+    "LOGGING_IN_TO_FB": "Logging into Facebook",
+    "LOGGING_IN_TO_LINKEDIN": "Logging into LinkedIn",
+    "LOADING_PROFILE": "Loading profile",
+    "LOADING_FB_PROFILE": "Loading Facebook profile",
+    "CREATING_ACCOUNT": "Creating account",
+    "WAITING_FOR_GPS": "Waiting for GPS location",
+    "LOGIN_ERROR": "Error logging in. Try again later",
+    "VERIFY_EMAIL_MESSAGE": "Check your inbox for an email to verify your address, then come back and click the button below",
+    "CHECK_EMAIL_VERIFICATION": "Check Email Verification",
+    "EMAIL_NOT_VERIFIED": "Email is not verified",
+    "FIRST_NAME_REQUIRED": "First name is required",
+    "SURNAME_REQUIRED": "Surname is required",
+    "BIRTH_DAY_REQUIRED": "Birth day is required",
+    "BIRTH_MONTH_REQUIRED": "Birth month is required",
+    "BIRTH_YEAR_REQUIRED": "Birth year is required",
+    "GENDER_REQUIRED": "Gender is required",
+    "TERMS_OF_USE": "Terms of Use",
+
+    "MENU_PROFILE": "Profile",
+    "MENU_MATCHES": "Find Matches",
+    "MENU_CHAT": "Chat",
+    "MENU_LIKED_ME": "Liked Me",
+    "MENU_DISCOVERY": "Discovery Preferences",
+    "MENU_SETTINGS": "App Settings",
+    "MENU_CONTACT": "Contact Us",
+    "MENU_SHARE": "Share",
+
+    "PROFILE_SETUP_MSG": "We need a couple more details",
+    "BIRTH_DAY": "Birth day",
+    "BIRTH_MONTH": "Birth month",
+    "BIRTH_YEAR": "Birth year",
+    "FIRST_NAME": "First name",
+    "GENDER": "Gender",
+    "MALE": "Male",
+    "FEMALE": "Female",
+
+    "PROFILE_TITLE": "My Profile",
+    "ABOUT": "About",
+    "FRIENDS_USING": "My Friends",
+    "MY_INTERESTS": "My Interests",
+
+    "EDIT_PROFILE_TITLE": "Edit Profile",
+    "ABOUT_YOU" : "About You",
+
+    "AWAY" : "away", 
+
+    "SELECT_PHOTO_SOURCE": "Select photo source",
+    "TAKE_PHOTO": "Take photo",
+    "GALLERY": "Gallery",
+    "PHOTO_ERROR": "An error occurred getting the photo",
+    "ALBUMS": "Albums",
+    "NO_FB_ALBUMS": "You don\"t have any Facebook albums",
+    "ADD_A_PHOTO": "Add a photo",
+    "CROP_YOUR_PHOTO": "Crop your photo"
 }

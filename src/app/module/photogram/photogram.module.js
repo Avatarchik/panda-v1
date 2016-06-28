@@ -13,7 +13,12 @@
       'app.share',
       'app.home',
       'app.search',
-      'app.discover'
+      'app.discover',
+      'app.swipe',
+      'app.location',
+      'app.chats',
+      'app.setting',
+      'app.likedme',
     ]);
 
 })();

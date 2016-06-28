@@ -14,6 +14,7 @@
         url: '/discover',
         views: {
           tabHome: {
+            controller: 'DiscoverCtrl',
             templateUrl: path + '/view/discover.html'
           }
         }

@@ -20,12 +20,8 @@
       'app.loading',
       'app.user',
       'app.photogram',
-      'app.swipe',
-      'app.location',
-      'app.chats',
-      'app.setting',
-      'app.likedme',
-      'ui.slider'
+      'ui.slider',
+      'emoji'
     ]);
 
 })();
@@ -201,7 +197,12 @@
       'app.share',
       'app.home',
       'app.search',
-      'app.discover'
+      'app.discover',
+      'app.swipe',
+      'app.location',
+      'app.chats',
+      'app.setting',
+      'app.likedme',
     ]);
 
 })();
@@ -243,13 +244,13 @@
 (function () {
   'use strict';
   angular
-    .module('app.discover', []);
+    .module('app.direct', []);
 
 })();
 (function () {
   'use strict';
   angular
-    .module('app.direct', []);
+    .module('app.discover', []);
 
 })();
 (function () {
@@ -2153,6 +2154,30 @@ angular.module("ngLocale", [], ["$provide", function ($provide) {
   }
 
 })();
+!function () {
+    "use strict";
+    var a = ["bowtie", "smile", "laughing", "blush", "smiley", "relaxed", "smirk", "heart_eyes", "kissing_heart", "kissing_closed_eyes", "flushed", "relieved", "satisfied", "grin", "wink", "stuck_out_tongue_winking_eye", "stuck_out_tongue_closed_eyes", "grinning", "kissing", "kissing_smiling_eyes", "stuck_out_tongue", "sleeping", "worried", "frowning", "anguished", "open_mouth", "grimacing", "confused", "hushed", "expressionless", "unamused", "sweat_smile", "sweat", "disappointed_relieved", "weary", "pensive", "disappointed", "confounded", "fearful", "cold_sweat", "persevere", "cry", "sob", "joy", "astonished", "scream", "neckbeard", "tired_face", "angry", "rage", "triumph", "sleepy", "yum", "mask", "sunglasses", "dizzy_face", "imp", "smiling_imp", "neutral_face", "no_mouth", "innocent", "alien", "yellow_heart", "blue_heart", "purple_heart", "heart", "green_heart", "broken_heart", "heartbeat", "heartpulse", "two_hearts", "revolving_hearts", "cupid", "sparkling_heart", "sparkles", "star", "star2", "dizzy", "boom", "collision", "anger", "exclamation", "question", "grey_exclamation", "grey_question", "zzz", "dash", "sweat_drops", "notes", "musical_note", "fire", "hankey", "poop", "shit", "\\+1", "thumbsup", "-1", "thumbsdown", "ok_hand", "punch", "facepunch", "fist", "v", "wave", "hand", "raised_hand", "open_hands", "point_up", "point_down", "point_left", "point_right", "raised_hands", "pray", "point_up_2", "clap", "muscle", "metal", "fu", "walking", "runner", "running", "couple", "family", "two_men_holding_hands", "two_women_holding_hands", "dancer", "dancers", "ok_woman", "no_good", "information_desk_person", "raising_hand", "bride_with_veil", "person_with_pouting_face", "person_frowning", "bow", "couplekiss", "couple_with_heart", "massage", "haircut", "nail_care", "boy", "girl", "woman", "man", "baby", "older_woman", "older_man", "person_with_blond_hair", "man_with_gua_pi_mao", "man_with_turban", "construction_worker", "cop", "angel", "princess", "smiley_cat", "smile_cat", "heart_eyes_cat", "kissing_cat", "smirk_cat", "scream_cat", "crying_cat_face", "joy_cat", "pouting_cat", "japanese_ogre", "japanese_goblin", "see_no_evil", "hear_no_evil", "speak_no_evil", "guardsman", "skull", "feet", "lips", "kiss", "droplet", "ear", "eyes", "nose", "tongue", "love_letter", "bust_in_silhouette", "busts_in_silhouette", "speech_balloon", "thought_balloon", "feelsgood", "finnadie", "goberserk", "godmode", "hurtrealbad", "rage1", "rage2", "rage3", "rage4", "suspect", "trollface", "sunny", "umbrella", "cloud", "snowflake", "snowman", "zap", "cyclone", "foggy", "ocean", "cat", "dog", "mouse", "hamster", "rabbit", "wolf", "frog", "tiger", "koala", "bear", "pig", "pig_nose", "cow", "boar", "monkey_face", "monkey", "horse", "racehorse", "camel", "sheep", "elephant", "panda_face", "snake", "bird", "baby_chick", "hatched_chick", "hatching_chick", "chicken", "penguin", "turtle", "bug", "honeybee", "ant", "beetle", "snail", "octopus", "tropical_fish", "fish", "whale", "whale2", "dolphin", "cow2", "ram", "rat", "water_buffalo", "tiger2", "rabbit2", "dragon", "goat", "rooster", "dog2", "pig2", "mouse2", "ox", "dragon_face", "blowfish", "crocodile", "dromedary_camel", "leopard", "cat2", "poodle", "paw_prints", "bouquet", "cherry_blossom", "tulip", "four_leaf_clover", "rose", "sunflower", "hibiscus", "maple_leaf", "leaves", "fallen_leaf", "herb", "mushroom", "cactus", "palm_tree", "evergreen_tree", "deciduous_tree", "chestnut", "seedling", "blossom", "ear_of_rice", "shell", "globe_with_meridians", "sun_with_face", "full_moon_with_face", "new_moon_with_face", "new_moon", "waxing_crescent_moon", "first_quarter_moon", "waxing_gibbous_moon", "full_moon", "waning_gibbous_moon", "last_quarter_moon", "waning_crescent_moon", "last_quarter_moon_with_face", "first_quarter_moon_with_face", "moon", "earth_africa", "earth_americas", "earth_asia", "volcano", "milky_way", "partly_sunny", "octocat", "squirrel", "bamboo", "gift_heart", "dolls", "school_satchel", "mortar_board", "flags", "fireworks", "sparkler", "wind_chime", "rice_scene", "jack_o_lantern", "ghost", "santa", "christmas_tree", "gift", "bell", "no_bell", "tanabata_tree", "tada", "confetti_ball", "balloon", "crystal_ball", "cd", "dvd", "floppy_disk", "camera", "video_camera", "movie_camera", "computer", "tv", "iphone", "phone", "telephone", "telephone_receiver", "pager", "fax", "minidisc", "vhs", "sound", "speaker", "mute", "loudspeaker", "mega", "hourglass", "hourglass_flowing_sand", "alarm_clock", "watch", "radio", "satellite", "loop", "mag", "mag_right", "unlock", "lock", "lock_with_ink_pen", "closed_lock_with_key", "key", "bulb", "flashlight", "high_brightness", "low_brightness", "electric_plug", "battery", "calling", "email", "mailbox", "postbox", "bath", "bathtub", "shower", "toilet", "wrench", "nut_and_bolt", "hammer", "seat", "moneybag", "yen", "dollar", "pound", "euro", "credit_card", "money_with_wings", "e-mail", "inbox_tray", "outbox_tray", "envelope", "incoming_envelope", "postal_horn", "mailbox_closed", "mailbox_with_mail", "mailbox_with_no_mail", "door", "smoking", "bomb", "gun", "hocho", "pill", "syringe", "page_facing_up", "page_with_curl", "bookmark_tabs", "bar_chart", "chart_with_upwards_trend", "chart_with_downwards_trend", "scroll", "clipboard", "calendar", "date", "card_index", "file_folder", "open_file_folder", "scissors", "pushpin", "paperclip", "black_nib", "pencil2", "straight_ruler", "triangular_ruler", "closed_book", "green_book", "blue_book", "orange_book", "notebook", "notebook_with_decorative_cover", "ledger", "books", "bookmark", "name_badge", "microscope", "telescope", "newspaper", "football", "basketball", "soccer", "baseball", "tennis", "8ball", "rugby_football", "bowling", "golf", "mountain_bicyclist", "bicyclist", "horse_racing", "snowboarder", "swimmer", "surfer", "ski", "spades", "hearts", "clubs", "diamonds", "gem", "ring", "trophy", "musical_score", "musical_keyboard", "violin", "space_invader", "video_game", "black_joker", "flower_playing_cards", "game_die", "dart", "mahjong", "clapper", "memo", "pencil", "book", "art", "microphone", "headphones", "trumpet", "saxophone", "guitar", "shoe", "sandal", "high_heel", "lipstick", "boot", "shirt", "tshirt", "necktie", "womans_clothes", "dress", "running_shirt_with_sash", "jeans", "kimono", "bikini", "ribbon", "tophat", "crown", "womans_hat", "mans_shoe", "closed_umbrella", "briefcase", "handbag", "pouch", "purse", "eyeglasses", "fishing_pole_and_fish", "coffee", "tea", "sake", "baby_bottle", "beer", "beers", "cocktail", "tropical_drink", "wine_glass", "fork_and_knife", "pizza", "hamburger", "fries", "poultry_leg", "meat_on_bone", "spaghetti", "curry", "fried_shrimp", "bento", "sushi", "fish_cake", "rice_ball", "rice_cracker", "rice", "ramen", "stew", "oden", "dango", "egg", "bread", "doughnut", "custard", "icecream", "ice_cream", "shaved_ice", "birthday", "cake", "cookie", "chocolate_bar", "candy", "lollipop", "honey_pot", "apple", "green_apple", "tangerine", "lemon", "cherries", "grapes", "watermelon", "strawberry", "peach", "melon", "banana", "pear", "pineapple", "sweet_potato", "eggplant", "tomato", "corn", "house", "house_with_garden", "school", "office", "post_office", "hospital", "bank", "convenience_store", "love_hotel", "hotel", "wedding", "church", "department_store", "european_post_office", "city_sunrise", "city_sunset", "japanese_castle", "european_castle", "tent", "factory", "tokyo_tower", "japan", "mount_fuji", "sunrise_over_mountains", "sunrise", "stars", "statue_of_liberty", "bridge_at_night", "carousel_horse", "rainbow", "ferris_wheel", "fountain", "roller_coaster", "ship", "speedboat", "boat", "sailboat", "rowboat", "anchor", "rocket", "airplane", "helicopter", "steam_locomotive", "tram", "mountain_railway", "bike", "aerial_tramway", "suspension_railway", "mountain_cableway", "tractor", "blue_car", "oncoming_automobile", "car", "red_car", "taxi", "oncoming_taxi", "articulated_lorry", "bus", "oncoming_bus", "rotating_light", "police_car", "oncoming_police_car", "fire_engine", "ambulance", "minibus", "truck", "train", "station", "train2", "bullettrain_front", "bullettrain_side", "light_rail", "monorail", "railway_car", "trolleybus", "ticket", "fuelpump", "vertical_traffic_light", "traffic_light", "warning", "construction", "beginner", "atm", "slot_machine", "busstop", "barber", "hotsprings", "checkered_flag", "crossed_flags", "izakaya_lantern", "moyai", "circus_tent", "performing_arts", "round_pushpin", "triangular_flag_on_post", "jp", "kr", "cn", "us", "fr", "es", "it", "ru", "gb", "uk", "de", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "keycap_ten", "1234", "zero", "hash", "symbols", "arrow_backward", "arrow_down", "arrow_forward", "arrow_left", "capital_abcd", "abcd", "abc", "arrow_lower_left", "arrow_lower_right", "arrow_right", "arrow_up", "arrow_upper_left", "arrow_upper_right", "arrow_double_down", "arrow_double_up", "arrow_down_small", "arrow_heading_down", "arrow_heading_up", "leftwards_arrow_with_hook", "arrow_right_hook", "left_right_arrow", "arrow_up_down", "arrow_up_small", "arrows_clockwise", "arrows_counterclockwise", "rewind", "fast_forward", "information_source", "ok", "twisted_rightwards_arrows", "repeat", "repeat_one", "new", "top", "up", "cool", "free", "ng", "cinema", "koko", "signal_strength", "u5272", "u5408", "u55b6", "u6307", "u6708", "u6709", "u6e80", "u7121", "u7533", "u7a7a", "u7981", "sa", "restroom", "mens", "womens", "baby_symbol", "no_smoking", "parking", "wheelchair", "metro", "baggage_claim", "accept", "wc", "potable_water", "put_litter_in_its_place", "secret", "congratulations", "m", "passport_control", "left_luggage", "customs", "ideograph_advantage", "cl", "sos", "id", "no_entry_sign", "underage", "no_mobile_phones", "do_not_litter", "non-potable_water", "no_bicycles", "no_pedestrians", "children_crossing", "no_entry", "eight_spoked_asterisk", "eight_pointed_black_star", "heart_decoration", "vs", "vibration_mode", "mobile_phone_off", "chart", "currency_exchange", "aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpius", "sagittarius", "capricorn", "aquarius", "pisces", "ophiuchus", "six_pointed_star", "negative_squared_cross_mark", "a", "b", "ab", "o2", "diamond_shape_with_a_dot_inside", "recycle", "end", "on", "soon", "clock1", "clock130", "clock10", "clock1030", "clock11", "clock1130", "clock12", "clock1230", "clock2", "clock230", "clock3", "clock330", "clock4", "clock430", "clock5", "clock530", "clock6", "clock630", "clock7", "clock730", "clock8", "clock830", "clock9", "clock930", "heavy_dollar_sign", "copyright", "registered", "tm", "x", "heavy_exclamation_mark", "bangbang", "interrobang", "o", "heavy_multiplication_x", "heavy_plus_sign", "heavy_minus_sign", "heavy_division_sign", "white_flower", "100", "heavy_check_mark", "ballot_box_with_check", "radio_button", "link", "curly_loop", "wavy_dash", "part_alternation_mark", "trident", "black_square", "white_square", "white_check_mark", "black_square_button", "white_square_button", "black_circle", "white_circle", "red_circle", "large_blue_circle", "large_blue_diamond", "large_orange_diamond", "small_blue_diamond", "small_orange_diamond", "small_red_triangle", "small_red_triangle_down", "shipit"],
+        b = new RegExp(":(" + a.join("|") + "):", "g");
+    angular.module("emoji", []).filter("emoji", function () {
+        return function (a) {
+
+            if(!a)
+                return a
+
+            a = a.replace(":)","<i class='emoji emoji_smile'></i>")
+            a = a.replace(":(","<i class='emoji emoji_frowning'></i>")
+            a = a.replace(";)","<i class='emoji emoji_wink'></i>")
+            a = a.replace(";p","<i class='emoji emoji_stuck_out_tongue_winking_eye'></i>")
+            a = a.replace(":p","<i class='emoji emoji_stuck_out_tongue_closed_eyes'></i>")
+
+            //a = a.replace("","<i class='emoji emoji_'></i>")
+
+            return a.replace(b, function (a, b) {
+                return "<i class='emoji emoji_" + b + "'>" + b + "</i>"
+            })
+        }
+    })
+}();
 // Generated by CoffeeScript 1.7.1
 (function() {
   var MODULE_NAME, SLIDER_TAG, angularize, contain, events, gap, halfWidth, hide, module, offset, offsetLeft, pixelize, qualifiedDirectiveDefinition, roundStep, show, sliderDirective, width;
@@ -5918,41 +5943,6 @@ angular.module("ngLocale", [], ["$provide", function ($provide) {
 })();
 (function () {
   'use strict';
-
-  /**
-   * @ngdoc directive
-   * @name heart
-   *
-   * @description
-   * _Please update the description and restriction._
-   *
-   * @restrict A
-   * */
-
-  angular
-    .module('app.photogram')
-    .directive('heart', heartDirective);
-
-  function heartDirective() {
-    return {
-      restrict: 'A',
-      scope: {
-        item: '='
-      },
-      link: heartLink
-    };
-
-    function heartLink(scope, elem, attr) {
-      elem.bind('click', function () {
-        console.log(scope.item);
-        elem.addClass('happy');
-      });
-    }
-  }
-
-})();
-(function () {
-  'use strict';
   angular
     .module('app.photogram')
     .directive('photogramLike', photogramLike)
@@ -6036,6 +6026,41 @@ angular.module("ngLocale", [], ["$provide", function ($provide) {
     }
   }
 
+
+})();
+(function () {
+  'use strict';
+
+  /**
+   * @ngdoc directive
+   * @name heart
+   *
+   * @description
+   * _Please update the description and restriction._
+   *
+   * @restrict A
+   * */
+
+  angular
+    .module('app.photogram')
+    .directive('heart', heartDirective);
+
+  function heartDirective() {
+    return {
+      restrict: 'A',
+      scope: {
+        item: '='
+      },
+      link: heartLink
+    };
+
+    function heartLink(scope, elem, attr) {
+      elem.bind('click', function () {
+        console.log(scope.item);
+        elem.addClass('happy');
+      });
+    }
+  }
 
 })();
 (function () {
@@ -6485,31 +6510,9 @@ angular.module("ngLocale", [], ["$provide", function ($provide) {
         url: '/chats',
         views: {
           tabHome: {
+              controller: 'ChatsCtrl',
+            controllerAs: 'vm',
             templateUrl: path + '/view/chats.html'
-          }
-        }
-      });
-
-  }
-
-})();
-(function () {
-  'use strict';
-  var path = 'app/module/photogram/module/discover';
-
-  angular
-    .module('app.discover')
-    .config(addRoute);
-
-  function addRoute($stateProvider, $translatePartialLoaderProvider) {
-    //$translatePartialLoaderProvider.addPart(path);
-
-    $stateProvider
-      .state('photogram.discover', {
-        url: '/discover',
-        views: {
-          tabHome: {
-            templateUrl: path + '/view/discover.html'
           }
         }
       });
@@ -6551,6 +6554,31 @@ angular.module("ngLocale", [], ["$provide", function ($provide) {
         }
       }
     });
+  }
+
+})();
+(function () {
+  'use strict';
+  var path = 'app/module/photogram/module/discover';
+
+  angular
+    .module('app.discover')
+    .config(addRoute);
+
+  function addRoute($stateProvider, $translatePartialLoaderProvider) {
+    //$translatePartialLoaderProvider.addPart(path);
+
+    $stateProvider
+      .state('photogram.discover', {
+        url: '/discover',
+        views: {
+          tabHome: {
+            controller: 'DiscoverCtrl',
+            templateUrl: path + '/view/discover.html'
+          }
+        }
+      });
+
   }
 
 })();
@@ -6699,27 +6727,29 @@ angular.module("ngLocale", [], ["$provide", function ($provide) {
 
 })();
 (function () {
-  'use strict';
-  var path = 'app/module/photogram/module/swipe';
+    'use strict';
 
-  angular
-    .module('app.swipe')
-    .config(addRoute);
+    angular
+            .module('app.swipe')
+            .config(configRoutes);
 
-  function addRoute($stateProvider, $translatePartialLoaderProvider) {
-    //$translatePartialLoaderProvider.addPart(path);
+    var path = 'app/module/photogram/module/swipe';
 
-    $stateProvider
-      .state('photogram.swipe', {
-        url: '/swipe',
-        views: {
-          tabHome: {
-            templateUrl: path + '/view/swipe.html'
-          }
-        }
-      });
+    function configRoutes($stateProvider) {
 
-  }
+        $stateProvider
+                .state('photogram.swipe', {
+                    url: '/swipe',
+                    views: {
+                        tabHome: {
+                            controller: 'SwipeCtrl',
+                            controllerAs: 'vm',
+                            templateUrl: path + '/view/swipe.html'
+                        }
+                    }
+                });
+
+    }
 
 })();
 (function () {
@@ -7412,27 +7442,6 @@ angular.module("ngLocale", [], ["$provide", function ($provide) {
 });
 (function () {
   'use strict';
-  /**
-   * @ngdoc controller
-   * @name UserMergeCtrl
-   *
-   * @description
-   * _Please update the description and dependencies._
-   *
-   * @requires $scope
-   * */
-  angular
-    .module('app.photogram')
-    .controller('DiscoverCtrl', DiscoverController);
-    
-      function DiscoverController( $rootScope, AppConfig, $state) { 
-          
-          var vm = this;
-          
-      }
-});
-(function () {
-  'use strict';
 
   angular
     .module('app.photogram')
@@ -7748,6 +7757,27 @@ angular.module("ngLocale", [], ["$provide", function ($provide) {
   }
 })();
 (function () {
+  'use strict';
+  /**
+   * @ngdoc controller
+   * @name UserMergeCtrl
+   *
+   * @description
+   * _Please update the description and dependencies._
+   *
+   * @requires $scope
+   * */
+  angular
+    .module('app.photogram')
+    .controller('DiscoverCtrl', DiscoverController);
+    
+      function DiscoverController( $rootScope, AppConfig, $state) { 
+          
+          var vm = this;
+          
+      }
+});
+(function () {
 
   angular
     .module('app.photogram')
@@ -8061,6 +8091,27 @@ angular.module("ngLocale", [], ["$provide", function ($provide) {
 });
 (function () {
   'use strict';
+  /**
+   * @ngdoc controller
+   * @name UserMergeCtrl
+   *
+   * @description
+   * _Please update the description and dependencies._
+   *
+   * @requires $scope
+   * */
+  angular
+    .module('app.photogram')
+    .controller('LocationCtrl', LocationController);
+    
+      function LocationController( $rootScope, AppConfig, $state) { 
+          
+          var vm = this;
+          
+      }
+});
+(function () {
+  'use strict';
   angular
     .module('app.photogram')
     .controller('PhotogramPhotoCtrl', PhotogramPhotoCtrl);
@@ -8146,27 +8197,6 @@ angular.module("ngLocale", [], ["$provide", function ($provide) {
 
 
 })();
-(function () {
-  'use strict';
-  /**
-   * @ngdoc controller
-   * @name UserMergeCtrl
-   *
-   * @description
-   * _Please update the description and dependencies._
-   *
-   * @requires $scope
-   * */
-  angular
-    .module('app.photogram')
-    .controller('LocationCtrl', LocationController);
-    
-      function LocationController( $rootScope, AppConfig, $state) { 
-          
-          var vm = this;
-          
-      }
-});
 (function () {
   'use strict';
   angular
@@ -8355,22 +8385,147 @@ angular.module("ngLocale", [], ["$provide", function ($provide) {
 });
 (function () {
   'use strict';
-  /**
-   * @ngdoc controller
-   * @name UserMergeCtrl
-   *
-   * @description
-   * _Please update the description and dependencies._
-   *
-   * @requires $scope
-   * */
+
   angular
     .module('app.photogram')
     .controller('SwipeCtrl', SwipeController);
     
-      function SwipeController( $rootScope, AppConfig, $state) { 
+      function SwipeController( $rootScope, AppConfig, $state, $translate, $scope, AppService, $ionicModal ) { 
           
-          var vm = this;
+          var vm = this;  
+          var translations
+        $translate(['MATCHES_LOAD_ERROR']).then(function (translationsResult) {
+            translations = translationsResult
+        })
+
+        // when $scope.matches is null then we haven't done a search
+        // when $scope.matches is an empty array then there are no new matches
+        // TODO rename this to profiles as its IProfile and not IMatch objects
+        $scope.matches = null
+
+        var profile = $scope.profile = AppService.getProfile()
+        $scope.profilePhoto = profile.photoUrl
+
+
+        $scope.$on('$ionicView.beforeEnter', function () { $scope.unreadChats = AppService.getUnreadChatsCount() })
+        $scope.$on('unreadChatsCountUpdated', function () { $scope.unreadChats = AppService.getUnreadChatsCount() })
+
+        $scope.$on('$ionicView.enter', function() {
+            if(profile.enabled) {
+                // Check for any previously loaded matches
+                $scope.matches = AppService.getPotentialMatches()
+                // If we haven't searched yet or we are coming back to the screen and there isn't any results then search for more
+                if(!$scope.matches || $scope.matches.length === 0)
+                    $scope.searchAgain()
+            }
+        })
+
+        $scope.$on('newPotentialMatches', function() { $scope.matches = AppService.getPotentialMatches() })
+
+        $scope.searchAgain = function() {
+            $scope.matches = null
+            updatePotentialMatches()
+        }
+
+
+        var MIN_SEARCH_TIME = 2000
+        function updatePotentialMatches() {
+
+            var startTime = Date.now()
+            AppService.updatePotentialMatches()
+                .then(function(result) {
+                    $log.log('CardsCtrl: found ' + result.length + ' potential matches')
+                    result.map(function(profile) { profile.image = profile.photoUrl })
+                    // Make the search screen show for at least a certain time so it doesn't flash quickly
+                    var elapsed = Date.now() - startTime
+                    if(elapsed < MIN_SEARCH_TIME)
+                        $timeout(function() { $scope.matches = result}, MIN_SEARCH_TIME - elapsed)
+                    else
+                        $scope.matches = result
+                }, function(error){
+                    $log.log('updatePotentialMatches error ' + JSON.stringify(error))
+                    $scope.matches = []
+                    AppUtil.toastSimple(translations.MATCHES_LOAD_ERROR)
+                }
+            )
+        }
+
+        // Initialise the new match modal
+        $ionicModal.fromTemplateUrl('newMatch.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function(modal) {$scope.modal = modal })
+        // Cleanup the modal when we're done with it!
+        $scope.$on('$destroy', function() { $scope.modal.remove() })
+
+        $scope.$on('newMatch', function(event, match) {
+            $log.log('CardsCtrl.newMatch ' + match.id)
+            $scope.newMatch = match
+            $scope.matchProfile = AppService.getProfileById(match.profileId)
+            $scope.modal.show()
+        })
+        $scope.closeNewMatch = function(){$scope.modal.hide()}
+
+        $scope.messageNewMatch = function() {
+            $scope.modal.hide()
+            $state.go('^.chat',{matchId : $scope.newMatch.id})
+        }
+        // a test function for viewing the new match modal screen
+        $scope.openNewMatch = function() {
+            $scope.newMatch = AppService.getMutualMatches()[0]
+            $scope.modal.show()
+        }
+
+        $scope.enableDiscovery = function() {
+            AppUtil.blockingCall(
+                AppService.enableDiscovery(),
+                function() {
+                    $log.log('discovery enabled. updating matches...')
+                    updatePotentialMatches()
+                }
+            )
+        }
+
+        $scope.viewDetails = function(card) {
+            $log.log('view details ' + JSON.stringify(card))
+            $scope.$parent.selectedCard = card
+            $state.go('^.card-info')
+        }
+
+        $scope.accept = function() {
+            $log.log('accept button')
+            var matchLength = $scope.matches.length
+            var topMatch = $scope.matches[matchLength-1]
+            AppService.processMatch(topMatch, true)
+            topMatch.accepted = true // this triggers the animation out
+            $timeout(function(){ $scope.matches.pop()}, 340)
+        }
+
+        $scope.reject = function() {
+            $log.log('reject button')
+            var matchLength = $scope.matches.length
+            var topMatch = $scope.matches[matchLength-1]
+            AppService.processMatch(topMatch, false)
+            topMatch.rejected = true // this triggers the animation out
+            $timeout(function() {$scope.matches.pop()}, 340)
+        }
+
+        // matches are swiped off from the end of the $scope.matches array (i.e. popped)
+
+        $scope.cardDestroyed = function(index){ $scope.matches.splice(index, 1)}
+
+        $scope.cardTransitionLeft = function(match) {
+            AppService.processMatch(match, false)
+            if($scope.matches.length == 0) {
+                // TODO auto-load more?
+            }
+        }
+        $scope.cardTransitionRight = function(match) {
+            AppService.processMatch(match, true)
+            if($scope.matches.length == 0) {
+                // TODO auto-load more?
+            }
+        }
           
       }
 });
@@ -9404,16 +9559,33 @@ $templateCache.put("app/component/ion-photo/view/photo.filter.html","<div class=
 $templateCache.put("app/module/intro/view/intro.html","<ion-view class=\"view-intro\" can-swipe-back=\"false\"><ion-content scroll=\"false\"><div class=\"intro-slider\">\n<ion-slide-box active-slide=\"slideIndex\" show-pager=\"true\" on-slide-changed=\"vm.slideChanged($index)\"><ion-slide \nng-repeat=\"item in vm.slides\"><div class=\"content\" ng-if=\"$index == vm.slideIndex\"><span class=\"top\"><h2>\n{{ ::item.top }}</h2></span><div class=\"phone {{ ::vm.device }}\"><img ng-src=\"{{ ::item.img }}\"></div></div>\n</ion-slide><ion-slide><div class=\"content\" ng-if=\"vm.slides.length == vm.slideIndex\"><div class=\"last\"><div \nclass=\"logo2 step1\"><img src=\"img/icon.png\"> <span class=\"icon2-logo\"></span></div><button \nclass=\"button button-block button-clear step2\" ui-sref=\"user.signin\" translate=\"INTRO.BUTTON.ENTER\"></button></div>\n</div></ion-slide></ion-slide-box></div><button class=\"button button-positive button-fab left\" ng-if=\"vm.slideIndex\" \nng-click=\"vm.previous()\"><i class=\"icon ion-ios-arrow-left\"></i></button> <button \nclass=\"button button-positive button-fab right\" ng-hide=\"vm.slideIndex === vm.slides.length\" ng-click=\"vm.next()\"><i \nclass=\"icon ion-ios-arrow-right\"></i></button></ion-content></ion-view>");
 $templateCache.put("app/module/loading/view/loading.html","<ion-view class=\"view-loading\"><ion-content scroll=\"false\"><img src=\"img/icon.png\"></ion-content></ion-view>");
 $templateCache.put("app/module/user/view/user.tabs.html","<ion-view class=\"view-login\" view-title=\"{{ \'USER.BUTTON.SIGNIN\' | translate }}\"><ion-content padding=\"false\" \nscroll=\"false\"><div class=\"user-head padding text-center step1\"><div class=\"logo2\"><img src=\"img/icon.png\"> <span \nclass=\"icon2-logo\"></span></div><h2 class=\"step2\" translate=\"USER.INTRO\"></h2><ion-tabs class=\"tabs-positive tabs-top\">\n<ion-tab title=\"{{ ::\'USER.BUTTON.SIGNIN\' | translate }}\" ui-sref=\"user.signin\"></ion-tab><ion-tab \ntitle=\"{{ ::\'USER.BUTTON.SIGNUP\' | translate }}\" ui-sref=\"user.signup\"></ion-tab></ion-tabs></div><ion-nav-view \nclass=\"step3\" name=\"tabLogin\"></ion-nav-view></ion-content></ion-view>");
-$templateCache.put("app/module/photogram/view/photogram.tabs.html","<ion-side-menus enable-menu-with-back-views=\"false\"><ion-side-menu-content><ion-nav-bar \nclass=\"bar bar-positive bar-mop\" align-title=\"left\"><ion-nav-back-button></ion-nav-back-button><ion-nav-buttons \nside=\"left\"><button class=\"button button-icon button-clear ion-navicon\" menu-toggle=\"left\"></button></ion-nav-buttons>\n</ion-nav-bar><ion-tabs class=\"tabs-dark tabs-photogram\"><ion-tab title=\"{{ ::\'PHOTOGRAM.TITLE.HOME\' | translate }}\" \nicon=\"ion-android-home\" ui-sref=\"photogram.home\"><ion-nav-view name=\"tabHome\"></ion-nav-view></ion-tab><ion-tab \ntitle=\"{{ ::\'PHOTOGRAM.TITLE.SEARCH\' | translate }}\" icon=\"ion-search\" ui-sref=\"photogram.search.grid\"><ion-nav-view \nname=\"tabSearch\"></ion-nav-view></ion-tab><ion-tab title=\"{{ ::\'PHOTOGRAM.TITLE.SHARE\' | translate }}\" \nicon=\"ion-camera\" class=\"middle\" ng-click=\"vm.postPhoto()\"><ion-nav-view name=\"tabCapture\"></ion-nav-view></ion-tab>\n<ion-tab title=\"{{ ::\'PHOTOGRAM.TITLE.ACTIVITY\' | translate }}\" icon=\"ion-chatbubble\" ui-sref=\"photogram.activity\">\n<ion-nav-view name=\"tabActivity\"></ion-nav-view></ion-tab><ion-tab \ntitle=\"{{ ::\'PHOTOGRAM.TITLE.PROFILE\' | translate }}\" icon=\"ion-person\" ui-sref=\"photogram.account\"><ion-nav-view \nname=\"tabProfile\"></ion-nav-view></ion-tab></ion-tabs></ion-side-menu-content><ion-side-menu side=\"left\">\n<ion-header-bar class=\"bar-positive\"><h1 class=\"title\">Menu</h1></ion-header-bar><ion-content><ul class=\"list\"><a \nui-sref=\"photogram.account\" class=\"item item-icon-left\" menu-close><i class=\"icon ion-person\"></i>\n {{\'MENU.PROFILE\' | translate}}</a> <a ui-sref=\"photogram.swipe\" class=\"item item-icon-left\" menu-close><i \nclass=\"icon ion-person-stalker\"></i> {{\'MENU.MATCHES\' | translate}}</a> <a ui-sref=\"photogram.chats\" \nclass=\"item item-icon-left\" menu-close><i class=\"icon ion-ios-chatbubble-outline\"></i> {{\'MENU.CHAT\' | translate}} \n<span ng-show=\"unreadChats > 0\" class=\"badge badge-assertive nav-icon-badge\">{{unreadChats}}</span></a> <a \nui-sref=\"photogram.likedMe\" class=\"item item-icon-left\" menu-close><i class=\"icon ion-ios-checkmark\"></i>\n {{\'MENU.LIKED_ME\' | translate}}</a> <a ui-sref=\"photogram.discover\" class=\"item item-icon-left\" menu-close><i \nclass=\"icon ion-ios-search-strong\"></i> {{\'MENU.DISCOVERY\' | translate}}</a> <a ui-sref=\"photogram.location\" \nclass=\"item item-icon-left\" menu-close><i class=\"icon ion-ios-location-outline\"></i> {{\'MENU.LOCATION\' | translate}}\n</a> <a ui-sref=\"photogram.setting\" class=\"item item-icon-left\" menu-close><i class=\"icon ion-ios-gear\"></i>\n {{\'MENU.SETTINGS\' | translate}}</a> <a ui-sref=\"photogram.contact\" class=\"item item-icon-left\" menu-close><i \nclass=\"icon ion-ios-email\"></i> {{\'MENU.CONTACT\' | translate}}</a></ul></ion-content></ion-side-menu></ion-side-menus>");
+$templateCache.put("app/module/photogram/view/photogram.tabs.html","<ion-side-menus enable-menu-with-back-views=\"false\"><ion-side-menu-content><ion-nav-bar \nclass=\"bar bar-positive bar-mop\" align-title=\"left\"><ion-nav-back-button></ion-nav-back-button><ion-nav-buttons \nside=\"left\"><button class=\"button button-icon button-clear ion-navicon\" menu-toggle=\"left\"></button></ion-nav-buttons>\n</ion-nav-bar><ion-tabs class=\"tabs-dark tabs-photogram\"><ion-tab title=\"{{ ::\'PHOTOGRAM.TITLE.HOME\' | translate }}\" \nicon=\"ion-android-home\" ui-sref=\"photogram.home\"><ion-nav-view name=\"tabHome\"></ion-nav-view></ion-tab><ion-tab \ntitle=\"{{ ::\'PHOTOGRAM.TITLE.SEARCH\' | translate }}\" icon=\"ion-search\" ui-sref=\"photogram.search.grid\"><ion-nav-view \nname=\"tabSearch\"></ion-nav-view></ion-tab><ion-tab title=\"{{ ::\'PHOTOGRAM.TITLE.SHARE\' | translate }}\" \nicon=\"ion-camera\" class=\"middle\" ng-click=\"vm.postPhoto()\"><ion-nav-view name=\"tabCapture\"></ion-nav-view></ion-tab>\n<ion-tab title=\"{{ ::\'PHOTOGRAM.TITLE.ACTIVITY\' | translate }}\" icon=\"ion-chatbubble\" ui-sref=\"photogram.activity\">\n<ion-nav-view name=\"tabActivity\"></ion-nav-view></ion-tab><ion-tab \ntitle=\"{{ ::\'PHOTOGRAM.TITLE.PROFILE\' | translate }}\" icon=\"ion-person\" ui-sref=\"photogram.account\"><ion-nav-view \nname=\"tabProfile\"></ion-nav-view></ion-tab></ion-tabs></ion-side-menu-content><ion-side-menu side=\"left\">\n<ion-header-bar class=\"bar-positive\"><h1 class=\"title\">Menu</h1></ion-header-bar><ion-content><ul class=\"list\"><a \nui-sref=\"photogram.account\" class=\"item item-icon-left\" menu-close><i class=\"icon ion-person\"></i>\n {{\'MENU.PROFILE\' | translate}}</a> <a ui-sref=\"photogram.swipe\" class=\"item item-icon-left\" menu-close><i \nclass=\"icon ion-person-stalker\"></i> {{\'MENU.MATCHES\' | translate}}</a> <a ui-sref=\"photogram.chats\" \nclass=\"item item-icon-left\" menu-close><i class=\"icon ion-ios-chatbubble-outline\"></i> {{\'MENU.CHAT\' | translate}} \n<span ng-show=\"unreadChats > 0\" class=\"badge badge-assertive nav-icon-badge\">{{unreadChats}}</span></a> <a \nui-sref=\"photogram.likedme\" class=\"item item-icon-left\" menu-close><i class=\"icon ion-ios-checkmark\"></i>\n {{\'MENU.LIKED_ME\' | translate}}</a> <a ui-sref=\"photogram.discover\" class=\"item item-icon-left\" menu-close><i \nclass=\"icon ion-ios-search-strong\"></i> {{\'MENU.DISCOVERY\' | translate}}</a> <a ui-sref=\"photogram.location\" \nclass=\"item item-icon-left\" menu-close><i class=\"icon ion-ios-location-outline\"></i> {{\'MENU.LOCATION\' | translate}}\n</a> <a ui-sref=\"photogram.setting\" class=\"item item-icon-left\" menu-close><i class=\"icon ion-ios-gear\"></i>\n {{\'MENU.SETTINGS\' | translate}}</a> <a ui-sref=\"photogram.contact\" class=\"item item-icon-left\" menu-close><i \nclass=\"icon ion-ios-email\"></i> {{\'MENU.CONTACT\' | translate}}</a></ul></ion-content></ion-side-menu></ion-side-menus>");
 $templateCache.put("app/module/photogram/view/photogram.view.html","<ion-view view-title=\"{{ \'Gallery preview\' | translate }}\"><ion-content class=\"bg-content\"><ion-list class=\"card\" \nng-if=\"!GalleryPreview.data.images.length\"><ion-item class=\"text-center\">No photos</ion-item></ion-list><div \nclass=\"row\"><div class=\"col\" ng-repeat=\"picture in GalleryPreview.data.images\" \nui-sref=\"app.gallerypreview({id: picture.id})\"><div class=\"card\"><div class=\"item item-image\"><img \nng-src=\"{{picture.image._url}}\"></div></div></div></div></ion-content></ion-view>");
+$templateCache.put("app/module/photogram/directives/comment/photogram.comment.directive.html","<ion-modal-view class=\"modal-comment\"><ion-header-bar class=\"bar-dark\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closeModal()\"></button><div class=\"title\">\n<span translate=\"PHOTOGRAM.COMMENT.TITLE\"></span>({{ ::comments.length }})</div></ion-header-bar><ion-content>\n<photogram-loading loading=\"loading\" icon=\"android\"></photogram-loading><ion-list class=\"list\" \nng-show=\"comments.length\" can-swipe=\"true\"><ion-item ng-repeat=\"item in comments\" class=\"item item-avatar\"><img \nng-src=\"{{ ::item.user.img._url }}\"><div class=\"row\"><h2>{{ ::item.user.name }}</h2><div>{{ ::item.text }}</div></div>\n<div class=\"row\"><p>{{ ::item.created | amTimeAgo }}</p></div><div ng-if=\"item.user.id === currentUser.id\">\n<ion-option-button class=\"button-info\" ng-click=\"editComment(item)\" translate=\"PHOTOGRAM.BUTTON.EDIT\">Edit\n</ion-option-button><ion-option-button class=\"button-assertive\" ng-click=\"deleteComment(item)\" \ntranslate=\"PHOTOGRAM.BUTTON.REMOVE\">Remove</ion-option-button></div></ion-item></ion-list><div class=\"center-ico\" \nng-if=\"nocomments\"><i class=\"icon ion-ios-chatbubble-outline\"></i><h1 translate=\"PHOTOGRAM.COMMENT.NO_COMMENTS\">\nNo Comments</h1></div></ion-content><ion-footer class=\"step2\"><div class=\"form\"><formly-form model=\"form\" \nfields=\"formFields\" form=\"rForm\"><button class=\"button button-positive\" type=\"button\" \nng-click=\"submitComment(rForm, form)\"><i class=\"icon ion-arrow-right-b\"></i></button></formly-form></div></ion-footer>\n</ion-modal-view>");
 $templateCache.put("app/module/photogram/directives/follow/photogram.follow.modal.html","<ion-modal-view class=\"modal-profile photogram-profile\"><ion-header-bar class=\"bar-positive\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closeModal()\"></button><div class=\"title\">\nFollow Users</div></ion-header-bar><ion-content><div class=\"list\"><div class=\"item item-avatar item-button-right\" \nng-repeat=\"item in data\"><img ng-src=\"{{ ::item.src }}\"><h2>{{ ::item.name }}</h2><p>{{ ::item.status }}</p><button \nclass=\"button\" ng-click=\"item.follow = !item.follow\" ng-class=\"item.follow ? \'button-positive\' : \'button-stable\'\"><i \nclass=\"icon\" ng-class=\"item.follow? \'ion-thumbsup\' : \'ion-plus\'\"></i></button></div></div></ion-content>\n</ion-modal-view>");
 $templateCache.put("app/module/photogram/directives/like/photogram.like.directive.html","<ion-modal-view class=\"modal-comment\"><ion-header-bar class=\"bar-dark\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closeModal()\"></button><div class=\"title\">\n{{ ::\'Likes\' | translate }} ({{ ::likes.length }})</div></ion-header-bar><ion-content><div class=\"list step1\"><div \nng-repeat=\"item in likes\" class=\"item item-avatar item-button-right\"><img ng-src=\"{{ ::item.user.img }}\"><h2>\n{{ ::item.user.name }}</h2><div>{{ ::item.text }}</div><p>{{ ::item.created | amTimeAgo }}</p><button \nclass=\"button button-positive button-outline\"><i class=\"icon ion-ios-plus-empty\"></i> {{ ::\'Follow\' }}</button></div>\n</div></ion-content></ion-modal-view>");
-$templateCache.put("app/module/photogram/directives/comment/photogram.comment.directive.html","<ion-modal-view class=\"modal-comment\"><ion-header-bar class=\"bar-dark\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closeModal()\"></button><div class=\"title\">\n<span translate=\"PHOTOGRAM.COMMENT.TITLE\"></span>({{ ::comments.length }})</div></ion-header-bar><ion-content>\n<photogram-loading loading=\"loading\" icon=\"android\"></photogram-loading><ion-list class=\"list\" \nng-show=\"comments.length\" can-swipe=\"true\"><ion-item ng-repeat=\"item in comments\" class=\"item item-avatar\"><img \nng-src=\"{{ ::item.user.img._url }}\"><div class=\"row\"><h2>{{ ::item.user.name }}</h2><div>{{ ::item.text }}</div></div>\n<div class=\"row\"><p>{{ ::item.created | amTimeAgo }}</p></div><div ng-if=\"item.user.id === currentUser.id\">\n<ion-option-button class=\"button-info\" ng-click=\"editComment(item)\" translate=\"PHOTOGRAM.BUTTON.EDIT\">Edit\n</ion-option-button><ion-option-button class=\"button-assertive\" ng-click=\"deleteComment(item)\" \ntranslate=\"PHOTOGRAM.BUTTON.REMOVE\">Remove</ion-option-button></div></ion-item></ion-list><div class=\"center-ico\" \nng-if=\"nocomments\"><i class=\"icon ion-ios-chatbubble-outline\"></i><h1 translate=\"PHOTOGRAM.COMMENT.NO_COMMENTS\">\nNo Comments</h1></div></ion-content><ion-footer class=\"step2\"><div class=\"form\"><formly-form model=\"form\" \nfields=\"formFields\" form=\"rForm\"><button class=\"button button-positive\" type=\"button\" \nng-click=\"submitComment(rForm, form)\"><i class=\"icon ion-arrow-right-b\"></i></button></formly-form></div></ion-footer>\n</ion-modal-view>");
 $templateCache.put("app/module/photogram/directives/photogrid/photogram.photos.grid.html","<div class=\"row\" ng-if=\"$index % 3 === 0\" ng-repeat=\"image in data\"><div class=\"col col-33 item-animate1\" \nng-if=\"$index < data.length\"><img ng-if=\"profile\" profile-modal user=\"data[$index].user\" \nng-src=\"{{ ::data[$index].src}}\" width=\"100%\"> <img ng-if=\"!profile\" ng-src=\"{{ ::data[$index].src}}\" width=\"100%\">\n</div><div class=\"col col-33 item-animate1\" ng-if=\"$index + 1 < data.length\"><img ng-if=\"profile\" profile-modal \nuser=\"data[$index + 1].user\" ng-src=\"{{ ::data[$index + 1].src}}\" width=\"100%\"> <img ng-if=\"!profile\" \nng-src=\"{{ ::data[$index + 1].src}}\" width=\"100%\"></div><div class=\"col col-33 item-animate1\" \nng-if=\"$index + 2 < data.length\"><img ng-if=\"profile\" profile-modal user=\"data[$index + 2].user\" \nng-src=\"{{ ::data[$index + 2].src}}\" width=\"100%\"> <img ng-if=\"!profile\" ng-src=\"{{ ::data[$index + 2].src}}\" \nwidth=\"100%\"></div></div>");
 $templateCache.put("app/module/photogram/directives/photolist/photo.list.html","<div class=\"list card animated fadeIn\" ng-repeat=\"gallery in data \"><div class=\"item item-avatar\" ion-affix \ndata-affix-within-parent-with-class=\"card\" profile-modal user=\"gallery.user\"><img ng-if=\"profile\" \nprofile=\"{{ ::gallery.user.id }}\" ng-src=\"{{ ::gallery.user.img._url}}\"> <img ng-src=\"{{ ::gallery.user.img._url}}\">\n<h2>{{ ::gallery.user.name}}</h2><p>{{ :: gallery.user.status }}</p><span>{{ ::gallery.created | amTimeAgo}}</span>\n</div><div class=\"item item-body\" on-double-tap=\"vm.like(gallery)\" ng-model=\"gallery\"><div \nclass=\"icon ion-ios-heart heart\" ng-class=\"(gallery.item.liked) ? \'happy\' : \'broken\' \"></div><i class=\"icon\" \nng-if=\"like\"></i> <img cache-src=\"{{ ::gallery.src}}\" id=\"{{ ::gallery.id}}\"></div><div class=\"item item-buttons\"><div \nclass=\"row\"><div class=\"col col-75\"><ion-spinner ng-show=\"gallery.item.likeProgress\"></ion-spinner><button \nphotogram-like ng-model=\"gallery\" ng-if=\"!gallery.item.likeProgress\" \nng-class=\"(gallery.item.liked) ? \'ion-ios-heart\' : \'ion-ios-heart-outline\' \" \nclass=\"button-clear button-icon button-heart\"></button> <button photogram-comment ng-model=\"gallery\" \nclass=\"button-clear button-icon ion-ios-chatbubble-outline\"></button> <button ng-click=\"vm.action(gallery)\" \nphotogram=\"{{ :: gallery.id }}\" class=\"button-clear button-icon ion-android-share\"></button></div><div \nclass=\"col text-right\"><button ng-click=\"vm.action(gallery)\" photogram=\"{{ :: gallery.id }}\" \nclass=\"button-clear button-icon ion-android-more-vertical\"></button></div></div></div><div class=\"padding\"><span \nclass=\"likes\" photogram-like photogram=\"{{ :: gallery }}\"><i class=\"icon ion-ios-heart\"></i> <span \nng-if=\"!gallery.item.likeProgress\">{{ :: gallery.item.qtdLike }}</span> <span translate=\"PHOTOGRAM.LIKES\"></span>\n</span><div class=\"list-comments\"><div class=\"comment-item\" profile-modal user=\"gallery.user\"><span class=\"username\">\n{{ :: gallery.user.name }}</span> <span class=\"comment\">{{ :: gallery.item.title }}</span></div><div \nclass=\"comment-item\" profile-modal user=\"item.user\" ng-repeat=\"item in gallery.comments\"><span class=\"username\">\n{{ :: item.user.name }}</span> <span class=\"comment\">{{ :: item.text }}</span></div></div><button \nclass=\"button button-block button-clear button-comment\" photogram-comment ng-model=\"gallery\"><span \ntranslate=\"PHOTOGRAM.BUTTON.COMMENT_ADD\"></span></button></div></div>");
 $templateCache.put("app/module/photogram/directives/settings/photogram.settings.modal.html","<ion-modal-view class=\"modal-profile\"><ion-header-bar class=\"bar-dark\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closeModal()\"></button><div class=\"title\" \ntranslate=\"PHOTOGRAM.SETTING.TITLE\"></div></ion-header-bar><ion-content class=\"animated fadeIn\"><div class=\"list\">\n<label class=\"item item-input item-select\"><div class=\"input-label\" style=\"z-index: 2\"><h2 \ntranslate=\"PHOTOGRAM.BUTTON.CHANGE_LANGUAGE\"></h2></div><select ng-model=\"language\" \nng-change=\"changeLanguage(language)\"><option ng-repeat=\"item in languages\" value=\"{{ ::item.code}}\" \ntranslate=\"{{ ::item.translation}}\"></option></select></label><ion-toggle class=\"toggle-positive\" ng-model=\"form.push\">\n<h3><small translate=\"PHOTOGRAM.SETTING.NOTIFICATION\"></small></h3><p ng-if=\"!setting_preview\" \ntranslate=\"PHOTOGRAM.BUTTON.OFF\"></p><p ng-if=\"setting_preview\" translate=\"PHOTOGRAM.BUTTON.ON\"></p></ion-toggle>\n<ion-item class=\"item-icon-right\" \nng-click=\"openLink(\'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FAW4JZS7KJM5S\')\"><h3><small \ntranslate=\"PHOTOGRAM.BUTTON.BUY\"></small></h3><i class=\"icon ion-ios-arrow-right\"></i></ion-item><ion-item \nclass=\"item-icon-right\" ng-click=\"openLink(\'http://photogramapp.com\')\"><h3><small translate=\"PHOTOGRAM.BUTTON.HELP\">\n</small></h3><i class=\"icon ion-ios-arrow-right\"></i></ion-item><ion-item class=\"item-icon-right\" \nng-click=\"openLink(\'http://photogramapp.com\')\"><h3><small translate=\"PHOTOGRAM.BUTTON.TERM_PRIVACY\"></small></h3><i \nclass=\"icon ion-ios-arrow-right\"></i></ion-item><ion-item class=\"item-icon-right\" \nng-click=\"openLink(\'http://photogramapp.com\')\"><h3><small translate=\"PHOTOGRAM.BUTTON.TERM_SERVICE\">Terms of Service\n</small></h3><i class=\"icon ion-ios-arrow-right\"></i></ion-item><ion-item class=\"item-icon-right\" ng-click=\"show();\">\n<h3><small translate=\"PHOTOGRAM.BUTTON.REPORT\">Report a Problem</small></h3><i class=\"icon ion-ios-arrow-right\"></i>\n</ion-item></div><div class=\"padding\"><button ng-click=\"link(\'logout\')\" class=\"button button-block button-positive\" \ntranslat=\"USER.BUTTON.LOGOUT\">Logout</button></div></ion-content></ion-modal-view>");
-$templateCache.put("app/module/user/module/friend/view/user.list.html","<ion-view view-title=\"UserList\" class=\"photogram-userlist\"><ion-header-bar class=\"bar-dark\"><h1 class=\"title\">\n{{ \'Follow Users\' | translate }}</h1><div class=\"buttons\"><button class=\"button button-positive\" \nng-click=\"vm.submitFollow()\"><i class=\"icon ion-arrow-right-b\"></i></button></div></ion-header-bar><ion-content><div \nclass=\"list\"><div class=\"item item-avatar item-animate1 item-button-right\" ng-repeat=\"item in vm.data\"><img \nng-src=\"{{ item.src }}\"><h2>{{ item.name }}</h2><p>{{ item.status }}</p><button class=\"button\" \nng-click=\"item.follow = !item.follow\" ng-class=\"item.follow ? \'button-positive\' : \'button-stable\'\"><i class=\"icon\" \nng-class=\"item.follow? \'ion-thumbsup\' : \'ion-plus\'\"></i></button></div></div></ion-content></ion-view>");
+$templateCache.put("app/module/photogram/module/activity/view/photogram.activity.html","<ion-view cache-view=\"false\" class=\"photogram-activity\"><ion-nav-title><h1 class=\"title\" translate=\"ACTIVITY.TITLE\">\n</h1></ion-nav-title><ion-content><photogram-loading loading=\"vm.loading\" icon=\"android\"></photogram-loading><div \nclass=\"list\"><div class=\"item item-avatar item-animate1\" ng-repeat=\"item in vm.data\"><img \nng-src=\"{{ ::item.user.img._url || \'img/user.png\' }}\"><h2>{{ ::item.user.name }}</h2><div class=\"text\">\n{{ ::item.action | translate }}</div><p>{{ ::item.created | amTimeAgo }}</p><div class=\"img-right\" ng-if=\"item.img\">\n<img ng-src=\"{{ ::item.img._url }}\"></div></div></div><ion-infinite-scroll ng-if=\"!vm.loading && !vm.empty\" \non-infinite=\"vm.load()\"></ion-infinite-scroll></ion-content></ion-view>");
+$templateCache.put("app/module/photogram/module/feedback/view/feedback.modal.html","<ion-modal-view class=\"modal-profile\"><ion-header-bar class=\"bar-dark\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closeModal()\"></button><div class=\"title\" \ntranslate=\"FEEDBACK.TITLE\"></div><button class=\"button button-positive\" ng-click=\"submitFeedback()\"><i \nclass=\"icon ion-arrow-right-b\"></i></button></ion-header-bar><ion-content><formly-form model=\"form\" form=\"rForm\" \nfields=\"formFields\"></formly-form></ion-content></ion-modal-view>");
+$templateCache.put("app/module/photogram/module/home/view/home.html","<ion-view class=\"view-home\"><ion-nav-title><span class=\"icon2-logo\"></span></ion-nav-title><ion-nav-buttons \nside=\"right\"><button class=\"button button-icon ion-ios-filing\" ui-sref=\"photogram.direct\"></button></ion-nav-buttons>\n<ion-content><ion-refresher ng-if=\"!vm.loading\" on-refresh=\"loadMore(true)\"></ion-refresher><photogram-loading \nloading=\"vm.loading\"></photogram-loading><photogram-photo-list profile=\"true\" photogram=\"vm.data\" loading=\"vm.loading\">\n</photogram-photo-list><div class=\"center-ico\" ng-if=\"vm.empty\"><i class=\"icon ion-ios-camera\"></i><h1 \ntranslate=\"HOME.TITLE.NO_PHOTO\"></h1></div><ion-infinite-scroll ng-if=\"!vm.loading && !vm.empty\" \non-infinite=\"vm.loadMore()\"></ion-infinite-scroll></ion-content></ion-view>");
+$templateCache.put("app/module/photogram/module/direct/view/direct.home.html","<ion-view><ion-nav-title translate=\"DIRECT.TITLE\"></ion-nav-title><ion-nav-buttons side=\"right\"><button \nclass=\"button button-icon ion-ios-plus-empty\" ui-sref=\"photogram.direct\"></button></ion-nav-buttons><ion-content>\n<ion-list><ion-item class=\"item-avatar\" ng-repeat=\"item in vm.data\" ui-sref=\"photogram.message({channelId: item.id})\">\n<img ng-src=\"{{item.user.src}}\" alt=\"\"><h2>{{ item.user.name}}</h2><p>{{ item.msg }}</p></ion-item></ion-list>\n</ion-content></ion-view>");
+$templateCache.put("app/module/photogram/module/direct/view/direct.messages.html","<ion-view id=\"userMessagesView\" cache-view=\"false\" view-title=\"Messages\"><div class=\"loader-center\" \nng-if=\"!vm.doneLoading\"><div class=\"loader\"><i class=\"icon ion-loading-c\"></i></div></div><ion-content \nhas-bouncing=\"true\" class=\"has-header has-footer\" delegate-handle=\"userMessageScroll\"><ion-refresher \npulling-text=\"{{\'DIRECT.BUTTON.PULL\' | TRANSLATE}}\" on-refresh=\"vm.doRefresh()\"></ion-refresher><div \nng-repeat=\"message in vm.data.messages\" class=\"message-wrapper\" on-hold=\"onMessageHold($event, $index, message)\"><div \nng-if=\"vm.user.id === message.user.id\"><img class=\"profile-pic right\" ng-src=\"{{message.user.src}}\"><div \nclass=\"chat-bubble right\"><div class=\"message\" ng-bind-html=\"message.body | nl2br\" autolinker></div><div \nclass=\"message-detail\"><span class=\"bold\">{{message.user.name}}</span>, <span am-time-ago=\"message.date\"></span></div>\n</div></div><div ng-if=\"vm.user.id !== message.user.id\"><img class=\"profile-pic left\" ng-src=\"{{message.user.src}}\">\n<div class=\"chat-bubble left\"><div class=\"message\" ng-bind-html=\"message.body | nl2br\" autolinker></div><div \nclass=\"message-detail\"><span class=\"bold\">{{message.user.name}}</span>, <span am-time-ago=\"message.date\"></span></div>\n</div></div><div class=\"cf\"></div></div></ion-content><form name=\"sendMessageForm\" \nng-submit=\"vm.sendMessage(sendMessageForm, vm.model)\" novalidate><ion-footer-bar \nclass=\"bar-stable item-input-inset message-footer\" keyboard-attach><label class=\"item-input-wrapper\"><textarea \nng-model=\"vm.model.text\" placeholder=\"{{ \'DIRECT.FORM.PLACEHOLDER\' | TRANSLATE}}\" required minlength=\"1\" \nmaxlength=\"1500\" msd-elastic></textarea></label><div class=\"footer-btn-wrap\"><button \nclass=\"button button-icon icon ion-android-send footer-btn\" type=\"submit\"></button></div></ion-footer-bar></form>\n</ion-view>");
+$templateCache.put("app/module/photogram/module/photo/view/photogram.photo.html","<ion-view view-title=\"Photo\"><ion-content><div class=\"list card step1\"><div class=\"item item-avatar\" \ndata-affix-within-parent-with-class=\"card\" ion-affix><img ng-src=\"{{vm.data.user.img}}\"><h2>{{vm.data.user.name}}</h2>\n<span>{{vm.data.created | amTimeAgo}}</span></div><div class=\"item item-body\"><img ng-src=\"{{vm.data.img._url}}\" \nstyle=\"width: 100%\"></div><div class=\"padding\"><p>{{ vm.data.title }}</p><p><a class=\"subdued\" href=\"#\">\n1 {{ \'Like\' | translate}}</a></p></div></div><div class=\"list\"><div ng-repeat=\"item in vm.comments\" \nclass=\"item item-avatar\"><img ng-src=\"{{ item.user.img }}\"><h2>{{ item.user.name }}</h2><p>{{ item.text }}</p></div>\n</div><div class=\"step2\"><formly-form model=\"vm.form\" fields=\"vm.formFields\" form=\"rForm\"><div class=\"padding\"><button \nclass=\"button button-block button-positive\" type=\"button\" ng-click=\"vm.submitComment(rForm, vm.form)\" translate>Comment\n</button></div></formly-form></div></ion-content></ion-view>");
+$templateCache.put("app/module/photogram/module/photo/view/photogram.popover.home.html","<ion-popover-view><ion-content><div class=\"list\"><div class=\"item\" ui-sref=\"gallery.settings\" translate>Settings</div>\n<div class=\"item\" ui-sref=\"gallery.settings\" translate>About</div></div></ion-content></ion-popover-view>");
+$templateCache.put("app/module/photogram/module/search/view/photo.modal.html","<ion-modal-view class=\"modal-profile photogram-profile\"><ion-header-bar class=\"bar-positive\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closeModal()\"></button><div class=\"title\">\n{{ user.name }}</div></ion-header-bar><ion-content overflow-scroll=\"true\"><div class=\"profile-top\"><div class=\"row\">\n<div class=\"col-25\"><img class=\"avatar\" ng-src=\"{{ user.src }}\"></div><div class=\"col col-statics\"><div class=\"row\">\n<div class=\"col\"><photogram-loading loading=\"loadingPhotos\"></photogram-loading><span ng-if=\"!loadingPhotos\" \nclass=\"text-center\">{{ user.qtdPhotos }}</span><h3 translate=\"PHOTOGRAM.PROFILE.TITLE.POST\">Posts</h3></div><div \nclass=\"col\"><photogram-loading loading=\"loadingFollowers\"></photogram-loading><span ng-if=\"!loadingFollowers\" \nclass=\"text-center\">{{ user.qtdFollowers }}</span><h3 translate=\"PHOTOGRAM.PROFILE.TITLE.FOLLOWER\"></h3></div><div \nclass=\"col\"><photogram-loading loading=\"loadingFollowing\"></photogram-loading><span ng-if=\"!loadingFollowing\" \nclass=\"text-center\">{{ user.qtdFollowing }}</span><h3 translate=\"PHOTOGRAM.PROFILE.TITLE.FOLLOWING\">Followings</h3>\n</div></div><div class=\"row col-edit\"><div class=\"col\"><photogram-loading loading=\"loadingFollow\"></photogram-loading>\n<button ng-if=\"!loadingFollow\" ng-class=\"{\'button-unfollow\': user.follow, \'button-follow\': !user.follow}\" \nng-click=\"follow()\" class=\"button\"><span ng-show=\"!user.follow\" translate>Follow</span> <span ng-show=\"user.follow\" \ntranslate>Following</span></button></div></div></div></div><div class=\"padding\"><span class=\"user-username\">\n{{ user.name }}</span><p class=\"user-status\">{{ user.status }}</p></div></div></ion-content></ion-modal-view>");
+$templateCache.put("app/module/photogram/module/search/view/photogram.search.grid.html","<ion-view cache-view=\"false\"><ion-nav-title><ion-search class=\"search-wrapper-light\" \nplaceholder=\"{{ \'SEARCH.FORM.INPUT\' | translate }}\" min-length=\"1\" model=\"GallerySearchGrid.data\" \nsource=\"GallerySearchGrid.load\"></ion-search></ion-nav-title><ion-content class=\"photogram-search\"><ion-refresher \nng-if=\"!vm.loading\" on-refresh=\"loadMore(true)\"></ion-refresher><photogram-loading loading=\"vm.loading\">\n</photogram-loading><photogram-photo-grid profile=\"true\" photogram=\"vm.data\" loading=\"vm.loading\">\n</photogram-photo-grid><div class=\"center-ico\" ng-if=\"vm.empty\"><i class=\"icon ion-ios-camera\"></i></div>\n<ion-infinite-scroll ng-if=\"!vm.loading && !vm.empty\" on-infinite=\"vm.loadMore()\"></ion-infinite-scroll></ion-content>\n</ion-view>");
+$templateCache.put("app/module/photogram/module/search/view/photogram.search.map.html","<ion-view class=\"maps-view\"><ion-nav-title translate=\"SEARCH.TITLE_MAP\"></ion-nav-title><ion-nav-buttons side=\"right\">\n<button ng-click=\"vm.location()\" class=\"button button-icon icon ion-pinpoint\"></button></ion-nav-buttons><ion-content \nscroll=\"false\"><div class=\"map-container\"><ui-gmap-google-map center=\"map.center\" zoom=\"map.zoom\"><ui-gmap-marker \nidkey=\"0\" coords=\"vm.user\"></ui-gmap-marker><ui-gmap-marker click=\"vm.openModal(item)\" idkey=\"item.id\" \ncoords=\"item.coords\" icon=\"item.icon\" ng-repeat=\"item in vm.data\"></ui-gmap-marker></ui-gmap-google-map></div>\n</ion-content></ion-view>");
+$templateCache.put("app/module/photogram/module/search/view/photogram.search.tabs.html","<ion-view title=\"Search\" class=\"view-tab\"><ion-nav-title><h1 class=\"title\" translate=\"SEARCH.TITLE\"></h1>\n</ion-nav-title><ion-tabs class=\"tabs-top tabs-positive tabs-striped\"><ion-tab \ntitle=\"{{\'SEARCH.TITLE_LIST\' | translate}}\" icon=\"ion-grid\" ui-sref=\"photogram.search.grid\"><ion-nav-view \nname=\"tabGrid\"></ion-nav-view></ion-tab><ion-tab title=\"{{\'SEARCH.TITLE_MAP\' | translate }}\" icon=\"ion-map\" \nui-sref=\"photogram.search.map\"><ion-nav-view name=\"tabMap\"></ion-nav-view></ion-tab></ion-tabs></ion-view>");
+$templateCache.put("app/module/photogram/module/discover/view/discover.html","<ion-view title=\"{{ \'MENU.DISCOVERY\' | translate }}\"><ion-content><ul class=\"list\"><li class=\"item item-toggle\">\n{{\'DISCOVERABLE\' | translate}}<label class=\"toggle\"><input type=\"checkbox\" ng-model=\"profile.enabled\"><div \nclass=\"track\"><div class=\"handle\"></div></div></label></li></ul><div class=\"item item-divider\">\n{{\'SHOW_ME\' | translate}}:</div><ul class=\"list\"><li class=\"item item-toggle\">{{\'GUYS\' | translate}}<label \nclass=\"toggle\"><input type=\"checkbox\" ng-model=\"profile.guys\"><div class=\"track\"><div class=\"handle\"></div></div>\n</label></li><li class=\"item item-toggle\">{{\'GIRLS\' | translate}}<label class=\"toggle\"><input type=\"checkbox\" \nng-model=\"profile.girls\"><div class=\"track\"><div class=\"handle\"></div></div></label></li><li class=\"item item-divider\">\n{{\'SEARCH_DISTANCE\' | translate}}: {{profile.distance}}{{profile.distanceType}}</li><li class=\"item\" \nstyle=\"height: 60px\"><slider floor=\"1\" ceiling=\"200\" ng-model-low=\"profile.distance\" ng-model-high=\"profile.distance\">\n</slider></li><li class=\"item item-divider\">\n{{\'AGED_BETWEEN\' | translate}}: {{profile.ageFrom}} to {{profile.ageTo == 55 ? \'55+\' : profile.ageTo}}</li><li \nclass=\"item\" style=\"height: 60px\"><slider floor=\"18\" ceiling=\"55\" ng-model-low=\"profile.ageFrom\" \nng-model-high=\"profile.ageTo\"></slider></li></ul><div style=\"width:100%;padding-left: 10px;padding-right: 10px\"><button\n class=\"button button-block button-positive\" ng-click=\"save()\">{{\'SAVE\' | translate}}</button> <button \nclass=\"button button-block button-light\" ng-click=\"cancel()\">{{\'CANCEL\' | translate}}</button></div></ion-content>\n</ion-view>");
+$templateCache.put("app/module/photogram/module/share/view/photogram.post.modal.html","<ion-modal-view class=\"modal-post\"><ion-header-bar class=\"bar-dark\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closePost()\"></button><div class=\"title\" \ntranslate=\"SHARE.TITLE\"></div><button class=\"button button-positive\" ng-click=\"submitPost(form)\"><i \nclass=\"icon ion-arrow-right-b\"></i></button></ion-header-bar><ion-content><div id=\"image\"><img ng-src=\"{{form.photo}}\">\n</div><ul class=\"list\"><li class=\"item\"><textarea type=\"text\" ng-model=\"form.title\" autofocus \nplaceholder=\"{{ \'SHARE.FORM.LEGEND\' | translate }}\"></textarea></li><li class=\"item item-input\" \nng-show=\"form.geo.image\"><input type=\"text\" placeholder=\"{{ \'SHARE.FORM.LOCATION\' | translate }}\" ion-location \nlocation=\"form.geo\" ng-model=\"form.geo.resume\"></li><li class=\"item nopadding\" ng-show=\"form.geo.image\"><img \nng-src=\"{{ form.geo.image }}\"></li></ul></ion-content></ion-modal-view>");
+$templateCache.put("app/module/photogram/module/share/view/photogram.share.modal.html","<ion-modal-view class=\"modal-share\"><ion-header-bar class=\"bar-dark\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closeShare()\"></button><div class=\"title\" \ntranslate=\"SHARE.TITLE\"></div><button class=\"button button-positive\" ng-click=\"submitShare(form, social)\"><i \nclass=\"icon ion-arrow-right-b\"></i></button></ion-header-bar><ion-content><div class=\"list\"><div \nclass=\"item item-thumbnail-left\" href=\"#\"><img ng-src=\"{{form.photo}}\" id=\"image\"><textarea type=\"text\" \nng-model=\"form.title\" placeholder=\"{{ \'SHARE.FORM.LEGEND\'|translate }}\"></textarea></div></div><ul class=\"list\"><li \nclass=\"item item-input\"><input type=\"text\" placeholder=\"{{ \'SHARE.FORM.LOCATION\' | translate }}\" ion-location \nlocation=\"form.geo\" ng-model=\"form.geo.resume\"></li><div class=\"item nopadding\" ng-show=\"form.geo.image\"><img \nng-src=\"{{ form.geo.image }}\"></div></ul><ul class=\"list\"><li class=\"item item-divider\" \ntranslate=\"SHARE.FORM.SHARE_IN\"></li><li class=\"item item-icon-left item-toggle\" ng-repeat=\"social in socials\"><i \nclass=\"icon ion-social-{{ social.title | lowercase }}\"></i> {{ social.title }}<label class=\"toggle toggle-positive\">\n<input type=\"checkbox\" ng-model=\"social.checked\"><div class=\"track\"><div class=\"handle\"></div></div></label></li></ul>\n</ion-content></ion-modal-view>");
+$templateCache.put("app/module/photogram/module/likedme/view/likedme.html","<ion-view view-title=\"Likes Me\"><ion-content ng-controller=\"Likedme as vm\"><ion-refresher \npulling-text=\"{{\'PULL_TO_REFRESH\' | translate}}\" on-refresh=\"vm.refresh()\"></ion-refresher><div \nng-if=\"!vm.profiles.length\" class=\"center\"><br>{{\'NO_LIKES\' | translate}}</div><ion-list><ion-item \nng-repeat=\"profile in vm.profiles\" class=\"item-thumbnail-left\" ng-click=\"vm.view($index)\"><img \nng-src=\"{{profile.photoUrl}}\"><h2>{{profile.name}}, {{profile.age}}</h2><p>\n{{profile.location | distance}} {{\'AWAY\' | translate}}<br>{{profile.about}}</p></ion-item></ion-list></ion-content>\n</ion-view>");
+$templateCache.put("app/module/photogram/module/swipe/view/swipe.html","<ion-view view-title=\"{{::appName}}\"><ion-nav-buttons side=\"right\"><i \nclass=\"button button-icon icon ion-ios-chatbubble-outline\" ui-sref=\"photogram.chats\"><span ng-show=\"unreadChats > 0\" \nclass=\"badge badge-assertive nav-icon-badge\">{{unreadChats}}</span></i></ion-nav-buttons><ion-content class=\"padding\" \nstyle=\"padding-top:100px;padding-top:5vw;text-align:center\" no-scroll><style>\n@-webkit-keyframes fade_out_animation {\n        0% { -webkit-transform: scale(1); }\n        100% { -webkit-transform: scale(2);  opacity: 0;  }\n      }\n\n      .imgOverlay{\n        position: absolute;\n        margin-left: auto;\n        margin-right: auto;\n        left: 0;\n        right: 0;\n      }\n\n      .imgCircle{\n        width: 150px;\n        height: 150px;\n        border-radius: 150px;\n        -webkit-border-radius: 150px;\n        -moz-border-radius: 150px;\n      }\n\n      .verticalAlign{\n        position: relative;\n        top: 50%;\n        transform: translateY(-50%);\n        width:100%;\n        margin:0 auto;\n      }\n\n      \n\n      .fade-out {\n        animation-name: \'fade_out_animation\';\n        animation-duration: 2000ms;\n        animation-iteration-count: infinite;\n        animation-timing-function: linear;\n        -webkit-animation-name: \'fade_out_animation\';\n        -webkit-animation-duration: 2000ms;\n        -webkit-animation-iteration-count: infinite;\n        -webkit-animation-timing-function: linear;\n        -moz-animation-name: \'fade_out_animation\';\n        -moz-animation-duration: 2000ms;\n        -moz-animation-iteration-count: infinite;\n        -moz-animation-timing-function: linear;\n        transition: opacity 2s\n      }\n</style><div></div><div ng-if=\"!profile.enabled\" class=\"text-label\" style=\"padding-top:50px;padding-top:20vw\"><div \nstyle=\"font-size: 24px; font-size: 8vw\">{{\'NOT_DISCOVERABLE\' | translate}}</div><div \nstyle=\"font-size: 14px;font-size: 4vw;padding-top: 5px\">{{\'ENABLE_DISCOVERY_TO_MEET\' | translate}}</div><button \nclass=\"button button-block\" ng-click=\"enableDiscovery()\">{{\'ENABLE_DISCOVERY\' | translate}}</button><br><br><div \nng-show=\"!profile.photos.length\"><br><div style=\"font-size: 20px; font-size: 6vw\">You don\'t have a profile picture yet\n</div><button class=\"button button-block\" ui-sref=\"photogram.account\">Edit Profile</button></div></div><div \nng-show=\"profile.enabled\"><div class=\"verticalAlign\" ng-show=\"!matches\" style=\"padding-top:150px;padding-top:45vw\"><img\n class=\"imgOverlay fade-out\" style=\"width:150px\" src=\"img/ring.png\"><img class=\"photo imgCircle imgOverlay\" img-cache \nng-src=\"{{::profilePhoto}}\"></div><div ng-show=\"!matches || matches.length==0\" \nstyle=\"padding-top:150px;padding-top:45vw\"><div class=\"verticalAlign text-label\" ng-show=\"!matches\">\n{{\'FINDING_PEOPLE\' | translate}}</div><div class=\"verticalAlign text-label\" style=\"font-size: 16px;font-size: 5.5vw\" \nng-show=\"matches.length == 0\">{{\'NO_ONE_NEW\' | translate}}<br><br><button class=\"button\" ng-click=\"searchAgain()\">\n{{\'SEARCH_AGAIN\' | translate}}</button></div></div><td-cards><td-card ng-if=\"$index >= matches.length - 2\" \nng-show=\"matches\" ng-repeat=\"match in matches track by $index\" on-destroy=\"cardDestroyed($index)\" \non-transition-left=\"cardTransitionLeft(match)\" on-transition-right=\"cardTransitionRight(match)\" \nclass=\"card-{{$index}}\" ng-class=\"{\'accepted-transform\': match.accepted, \'rejected-transform\': match.rejected}\"><div \nclass=\"image\" ng-click=\"viewDetails(match)\"><div class=\"yes-text\" ng-style=\"leftTextOpacity\">{{\'LIKE\' | translate}}\n</div><img style=\"width:100%\" ng-src=\"{{::match.image}}\"><div class=\"no-text\" ng-style=\"rightTextOpacity\">\n{{\'NOT_LIKE\' | translate}}</div></div><div>{{match.name}}</div></td-card></td-cards><div class=\"list\" \nng-if=\"searchLayout == \'list\'\"><a class=\"item item-thumbnail-left\" style=\"text-align: left\" \nng-repeat=\"match in matches track by $index\" ng-click=\"viewDetails(match)\"><img ng-src=\"{{::match.image}}\" img-cache>\n<h2>{{::match.name}}, {{::match.age}}</h2><p>{{match.location | distance}} {{\'AWAY\' | translate}}<br>{{match.about}}\n</p></a></div><div class=\"row\" ng-repeat=\"match in matches track by $index\" \nng-if=\"searchLayout == \'grid\' && $index % 2 == 0\"><div class=\"col\"><div class=\"list card\" \nng-click=\"viewDetails(match)\"><div class=\"item item-image\"><img ng-src=\"{{::match.image}}\"></div><a \nclass=\"item item-icon-left item-icon-right\">{{::match.name}}</a></div></div><div class=\"col\"><div class=\"list card\" \nng-click=\"viewDetails(matches[index+1])\" ng-if=\"$index+1 < matches.length\"><div class=\"item item-image\"><img \nng-src=\"{{::matches[index+1].image}}\"></div><a class=\"item item-icon-left item-icon-right\">{{::matches[index+1].name}}\n</a></div></div></div><div class=\"list card\" ng-repeat=\"match in matches track by $index\" \nng-if=\"searchLayout == \'card\'\" ng-click=\"viewDetails(match)\"><div class=\"item item-image\"><img \nng-src=\"{{::match.image}}\"></div><a class=\"item item-icon-left item-icon-right\" href=\"#\"><i style=\"float:left\" \nclass=\"button button-icon icon ion-android-close assertive\" ng-click=\"reject()\"></i> {{::match.name}} <i \nstyle=\"float:right\" class=\"button button-icon icon ion-ios-heart-outline assertive\" ng-click=\"like()\"></i></a></div>\n<div ng-show=\"matches.length > 0\" class=\"swipe-buttons\"><div class=\"row\"><div class=\"col\"><a \nclass=\"button button-icon\" ng-click=\"reject()\"><i class=\"icon ion-ios-close-outline swipe-button swipe-reject\"></i></a>\n</div><div class=\"col\"><a class=\"button button-icon\" ng-click=\"accept()\"><i \nclass=\"icon ion-ios-checkmark-outline swipe-button swipe-accept\"></i></a></div></div></div></div></ion-content>\n</ion-view>");
 $templateCache.put("app/module/user/module/avatar/view/user.avatar.html","<ion-view title=\"{{ \'USER.AVATAR.TITLE\' | translate }}\"><ion-nav-bar class=\"bar bar-positive bar-mop\" \nalign-title=\"left\"></ion-nav-bar><ion-content class=\"view-avatar\"><div class=\"row step1\"><div class=\"col\"><img \nclass=\"avatar\" user-avatar ng-src=\"{{ ::currentUser.img._url || \'img/user.png\' }}\"></div></div><div class=\"step2\">\n<label class=\"item item-input\"><i class=\"icon icon-envelope placeholder-icon\"></i> <input type=\"text\" \nng-model=\"vm.form.email\" disabled=\"disabled\"></label><formly-form model=\"vm.form\" fields=\"vm.formFields\" \nform=\"vm.rForm\"></formly-form></div><div class=\"padding step3\"><button ng-click=\"vm.submitAvatar()\" \nclass=\"button button-block button-positive\" translate=\"USER.BUTTON.NEXT\"></button></div></ion-content></ion-view>");
+$templateCache.put("app/module/photogram/module/setting/view/setting.html","<ion-view view-title=\"{{\'SETTINGS_TITLE\' | translate}}\" cache-view=\"false\"><ion-content><div class=\"list\"><div \nclass=\"item item-divider\">{{\'NOTIFICATION_SOUND\' | translate}}:</div><ion-toggle ng-model=\"profile.notifyMatch\" \ntoggle-class=\"toggle-calm\">{{\'NEW_MATCH\' | translate}}</ion-toggle><ion-toggle ng-model=\"profile.notifyMessage\" \ntoggle-class=\"toggle-calm\">{{\'NEW_MESSAGE\' | translate}}</ion-toggle><div class=\"item item-divider\">\n{{\'SHOW_DISTANCES_IN\' | translate}}:</div><ion-radio ng-model=\"profile.distanceType\" name=\"distanceType\" \nng-value=\"\'km\'\">Km</ion-radio><ion-radio ng-model=\"profile.distanceType\" name=\"distanceType\" ng-value=\"\'mi\'\">Mi\n</ion-radio><div class=\"item item-divider\">{{\'LANGUAGE\' | translate}}:</div><div style=\"width:100%;padding:2px\"><button\n ng-click=\"setLanguage(\'en\')\" class=\"button button-small button-stable\">English</button> <button \nng-click=\"setLanguage(\'de\')\" class=\"button button-small button-stable\">Deutch</button></div></div><br><div \nclass=\"wide center padding-10\"><button class=\"button button-block button-positive\" ng-click=\"save()\" translate=\"SAVE\">\n</button> <button class=\"button button-block button-stable\" ng-click=\"deleteUnmatchedSwipes()\">Delete Unmatched Swipes\n</button> <button class=\"button button-block button-stable\" ng-click=\"logout()\" translate=\"LOGOUT\"></button> <button \nclass=\"button button-block button-assertive\" ng-click=\"deleteAccount()\" translate=\"DELETE_ACCOUNT\"></button></div><div \nclass=\"wide center padding-10 bold\" ng-click=\"debug()\">\n{{\'VERSION\' | translate}}: {{::(appVersion ? appVersion : \'N/A\')}}</div></ion-content></ion-view>");
+$templateCache.put("app/module/photogram/module/chats/view/chats.html","<style>.unread {\n        font-weight: bold;\n    }</style><ion-view view-title=\"Chat\"><ion-nav-buttons side=\"right\"><i \nclass=\"button button-icon icon ion-gear-a\" ng-click=\"chatSettings($event)\"></i></ion-nav-buttons><ion-content><div \nng-show=\"!matches.length\" style=\"text-align: center;font-family:\'Avenir Next LT Pro Regular\';font-size:18px\"><br>\n{{\'NO_MATCHES\' | translate}}<br><br>{{\'START_SWIPING\' | translate}}!</div><div class=\"list\"><a \nclass=\"item item-avatar\" ng-repeat=\"match in matches track by match.id\" ui-sref=\"^.chat({matchId : match.id})\"><img \nng-src=\"{{::match.profile.photoUrl}}\" img-cache><h2>{{::match.profile.name}}</h2><p \nng-class=\"match.read ? \'\' : \'unread\'\" ng-bind-html=\"match.lastMessage | escapeHTML | emoji\"></a></div></ion-content>\n</ion-view>");
 $templateCache.put("app/module/user/module/merge/view/user.merge.html","<ion-view title=\"{{ \'Complete your Profile\' | translate }}\"><ion-nav-bar class=\"bar bar-positive bar-mop\" \nalign-title=\"left\"></ion-nav-bar><ion-content class=\"view-avatar\"><div class=\"step1 padding\"><h5 translate>\nYour email is already associated with another account, please enter your password</h5></div><div class=\"row step1\"><div\n class=\"col\"><img class=\"avatar\" user-avatar ng-src=\"{{ vm.form.src }}\"></div></div><div class=\"list step2\"><label \nclass=\"item item-input\"><i class=\"icon icon-user placeholder-icon\"></i> <input type=\"text\" ng-model=\"vm.form.name\" \ndisabled=\"disabled\"></label><label class=\"item item-input\"><i class=\"icon icon-envelope placeholder-icon\"></i> <input \ntype=\"text\" ng-model=\"vm.form.email\" disabled=\"disabled\"></label><label class=\"item item-input lock\"><input \ntype=\"password\" placeholder=\"{{ \'Password\' | translate }}\" ng-model=\"vm.form.password\"></label></div><div \nclass=\"padding step3\"><button ng-click=\"vm.submitvm(vm.form)\" ng-disabled=\"form.facebook\" \nclass=\"button button-block button-facebook\"><i class=\"icon ion-social-facebook\"></i> <span translate>vm Facebook</span>\n</button></div></ion-content></ion-view>");
 $templateCache.put("app/module/user/module/profile/view/grid.html","<ion-view hide-nav-bar><ion-content><div class=\"item item-divider\" translate>Grid List</div><div \nclass=\"center-ico animated fadeIn\" ng-if=\"vm.empty\"><i class=\"icon ion-camera\"></i><h1 translate=\"\">No Post</h1></div>\n<photogram-loading loading=\"vm.loading\"></photogram-loading><photogram-photo-grid photogram=\"vm.data\" \nloading=\"vm.loading\"></photogram-photo-grid></ion-content></ion-view>");
 $templateCache.put("app/module/user/module/profile/view/list.html","<ion-view hide-nav-bar><ion-content><div class=\"item item-divider\" translate>Recent List</div><div \nclass=\"center-ico animated fadeIn\" ng-if=\"vm.empty\"><i class=\"icon ion-camera\"></i><h1 translate=\"\">No Post</h1></div>\n<photogram-loading loading=\"vm.loading\"></photogram-loading><photogram-photo-list photogram=\"vm.data\" \nloading=\"vm.loading\"></photogram-photo-list></ion-content></ion-view>");
@@ -9421,24 +9593,7 @@ $templateCache.put("app/module/user/module/profile/view/profile.edit.modal.html"
 $templateCache.put("app/module/user/module/profile/view/profile.html","<ion-view cache-view=\"false\" class=\"photogram-profile\"><ion-nav-title><h1 class=\"title\">{{ ::vm.user.name }}</h1>\n</ion-nav-title><ion-nav-buttons side=\"right\"><button photogram-settings class=\"button button-icon icon ion-gear-a\">\n</button></ion-nav-buttons><ion-content class=\"animated fadeIn\"><div class=\"profile-top\"><div class=\"row\"><div \nclass=\"col-25\"><img class=\"avatar\" user-avatar ng-src=\"{{ ::currentUser.img._url || \'img/user.png\' }}\"></div><div \nclass=\"col col-statics\"><div class=\"row\"><div class=\"col\"><photogram-loading loading=\"loadingPhotos\">\n</photogram-loading><span ng-if=\"!loadingPhotos\" class=\"text-center\">{{ ::vm.user.qtdPhotos }}</span><h3 \ntranslate=\"PHOTOGRAM.PROFILE.TITLE.POST\">Posts</h3></div><div class=\"col\"><photogram-loading \nloading=\"loadingFollowers\"></photogram-loading><span ng-if=\"!loadingFollowers\" class=\"text-center\">\n{{ ::vm.user.qtdFollowers }}</span><h3 translate=\"PHOTOGRAM.PROFILE.TITLE.FOLLOWER\"></h3></div><div class=\"col\">\n<photogram-loading loading=\"loadingFollowing\"></photogram-loading><span ng-if=\"!loadingFollowing\" class=\"text-center\">\n{{ ::vm.user.qtdFollowing }}</span><h3 translate=\"PHOTOGRAM.PROFILE.TITLE.FOLLOWING\">Followings</h3></div></div><div \nclass=\"row col-edit\"><div class=\"col\"><button profile-modal-edit class=\"button\"><div \ntranslate=\"PHOTOGRAM.BUTTON.PROFILE_EDIT\"></div></button></div></div></div></div><div class=\"padding\"><span \nclass=\"user-username\">{{ ::currentUser.name }}</span><p class=\"user-status\">{{ ::currentUser.status }}</p></div></div>\n<div class=\"item bar\"><div class=\"button-bar\"><button class=\"button button-icon icon ion-drag\" \nng-class=\"{active: vm.tab.list}\" ng-click=\"vm.changeTab(\'list\')\"></button> <button \nclass=\"button button-icon icon ion-grid\" ng-class=\"{active: vm.tab.grid}\" ng-click=\"vm.changeTab(\'grid\')\"></button> \n<button class=\"button button-icon icon ion-ios-location\"></button></div></div><div class=\"item item-divider\" \ntranslate=\"PHOTOGRAM.MSG.RECENT\">Recent</div><div class=\"center-ico animated fadeIn\" ng-if=\"vm.empty\"><i \nclass=\"icon ion-camera\"></i><h1 translate=\"PHOTOGRAM.MSG.NO_POST\">No Post</h1></div><photogram-loading \nloading=\"vm.loading\"></photogram-loading><div class=\"tab\" ng-if=\"vm.tab.list\"><photogram-photo-list \nphotogram=\"vm.data\" loading=\"vm.loading\"></photogram-photo-list></div><div class=\"tab\" ng-if=\"vm.tab.grid\">\n<photogram-photo-grid photogram=\"vm.data\" loading=\"vm.loading\"></photogram-photo-grid></div></ion-content></ion-view>");
 $templateCache.put("app/module/user/module/profile/view/profile.modal.html","<ion-modal-view class=\"modal-profile photogram-profile\"><ion-header-bar class=\"bar-positive\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closeModal()\"></button><div class=\"title\">\n{{ user.name }}</div></ion-header-bar><ion-content overflow-scroll=\"true\"><div class=\"profile-top\"><div class=\"row\">\n<div class=\"col-25\"><img class=\"avatar\" ng-src=\"{{ user.src }}\"></div><div class=\"col col-statics\"><div class=\"row\">\n<div class=\"col\"><photogram-loading loading=\"loadingPhotos\"></photogram-loading><span ng-if=\"!loadingPhotos\" \nclass=\"text-center\">{{ user.qtdPhotos }}</span><h3 translate=\"PHOTOGRAM.PROFILE.TITLE.POST\">Posts</h3></div><div \nclass=\"col\"><photogram-loading loading=\"loadingFollowers\"></photogram-loading><span ng-if=\"!loadingFollowers\" \nclass=\"text-center\">{{ user.qtdFollowers }}</span><h3 translate=\"PHOTOGRAM.PROFILE.TITLE.FOLLOWER\"></h3></div><div \nclass=\"col\"><photogram-loading loading=\"loadingFollowing\"></photogram-loading><span ng-if=\"!loadingFollowing\" \nclass=\"text-center\">{{ user.qtdFollowing }}</span><h3 translate=\"PHOTOGRAM.PROFILE.TITLE.FOLLOWING\">Followings</h3>\n</div></div><div class=\"row col-edit\"><div class=\"col\"><photogram-loading loading=\"loadingFollow\"></photogram-loading>\n<button ng-if=\"!loadingFollow\" ng-class=\"{\'button-unfollow\': user.follow, \'button-follow\': !user.follow}\" \nng-click=\"follow()\" class=\"button\"><span ng-show=\"!user.follow\" translate>Follow</span> <span ng-show=\"user.follow\" \ntranslate>Following</span></button></div></div></div></div><div class=\"padding\"><span class=\"user-username\">\n{{ user.name }}</span><p class=\"user-status\">{{ user.status }}</p></div></div><div class=\"item bar\"><div \nclass=\"button-bar\"><button class=\"button button-icon icon ion-drag\" ng-class=\"{active: tab.list}\" \nng-click=\"changeTab(\'list\')\"></button> <button class=\"button button-icon icon ion-grid\" ng-class=\"{active: tab.grid}\" \nng-click=\"changeTab(\'grid\')\"></button> <button class=\"button button-icon icon ion-ios-location\"></button></div></div>\n<div class=\"item item-divider\" translate>Recent</div><div class=\"center-ico animated fadeIn\" ng-if=\"empty\"><i \nclass=\"icon ion-camera\"></i><h1 translate=\"\">No Post</h1></div><photogram-loading loading=\"loading\">\n</photogram-loading><div class=\"tab\" ng-if=\"tab.list\"><photogram-photo-list photogram=\"data\" user=\"false\" \nloading=\"loading\"></photogram-photo-list></div><div class=\"tab\" ng-if=\"tab.grid\"><photogram-photo-grid \nphotogram=\"data\" user=\"false\" loading=\"loading\"></photogram-photo-grid></div></ion-content></ion-modal-view>");
 $templateCache.put("app/module/user/module/profile/view/profile.photos.html","<ion-view title=\"{{\'Profile\' | translate}}\" class=\"profile\"><ion-content scroll=\"false\"><h2>Fotos</h2></ion-content>\n</ion-view>");
-$templateCache.put("app/module/user/module/signin/view/user.signin.html","<ion-view class=\"view-login\" view-title=\"{{ ::\'USER.BUTTON.ENTER\' | translate }}\"><ion-content padding=\"false\"><div \nclass=\"padding\"><formly-form model=\"vm.form\" fields=\"vm.formFields\" form=\"vm.rForm\"><button recovery-pass \nclass=\"button button-right button-block button-clear\"><span></span></button> <button \nclass=\"button button-block button-positive\" type=\"button\" ng-disabled=\"vm.rForm.$invalid\" \nng-click=\"vm.submitLogin(vm.rForm, vm.form)\" translate=\"USER.BUTTON.ENTER\"></button></formly-form><div class=\"line\">\n<div class=\"left\"></div><span translate=\"USER.OR\">or</span><div class=\"right\"></div></div><button \nng-click=\"vm.facebook()\" class=\"button button-block button-facebook\"><i class=\"icon ion-social-facebook\"></i> <span>\n{{ ::\'USER.BUTTON.LOGIN_SOCIAL\'| translate}}Facebook</span></button></div></ion-content></ion-view>");
+$templateCache.put("app/module/user/module/friend/view/user.list.html","<ion-view view-title=\"UserList\" class=\"photogram-userlist\"><ion-header-bar class=\"bar-dark\"><h1 class=\"title\">\n{{ \'Follow Users\' | translate }}</h1><div class=\"buttons\"><button class=\"button button-positive\" \nng-click=\"vm.submitFollow()\"><i class=\"icon ion-arrow-right-b\"></i></button></div></ion-header-bar><ion-content><div \nclass=\"list\"><div class=\"item item-avatar item-animate1 item-button-right\" ng-repeat=\"item in vm.data\"><img \nng-src=\"{{ item.src }}\"><h2>{{ item.name }}</h2><p>{{ item.status }}</p><button class=\"button\" \nng-click=\"item.follow = !item.follow\" ng-class=\"item.follow ? \'button-positive\' : \'button-stable\'\"><i class=\"icon\" \nng-class=\"item.follow? \'ion-thumbsup\' : \'ion-plus\'\"></i></button></div></div></ion-content></ion-view>");
 $templateCache.put("app/module/user/module/signup/view/user.signup.html","<ion-view view-title=\"{{ \'USER.BUTTON.SIGNUP\' | translate }}\"><ion-content padding=\"true\"><formly-form model=\"vm.form\" \nfields=\"vm.formFields\" form=\"vm.rForm\"><div class=\"padding\"><button class=\"button button-block button-positive\" \ntype=\"button\" ng-disabled=\"rForm.$invalid\" ng-click=\"vm.submitRegister(vm.rForm, vm.form)\" \ntranslate=\"USER.BUTTON.NEXT\"></button></div></formly-form><div class=\"padding\"><p class=\"text-center\"><span \ntranslate=\"USER.TERM1\"></span> <b open-terms translate=\"USER.TERM2\"></b></p></div></ion-content></ion-view>");
-$templateCache.put("app/module/photogram/module/activity/view/photogram.activity.html","<ion-view cache-view=\"false\" class=\"photogram-activity\"><ion-nav-title><h1 class=\"title\" translate=\"ACTIVITY.TITLE\">\n</h1></ion-nav-title><ion-content><photogram-loading loading=\"vm.loading\" icon=\"android\"></photogram-loading><div \nclass=\"list\"><div class=\"item item-avatar item-animate1\" ng-repeat=\"item in vm.data\"><img \nng-src=\"{{ ::item.user.img._url || \'img/user.png\' }}\"><h2>{{ ::item.user.name }}</h2><div class=\"text\">\n{{ ::item.action | translate }}</div><p>{{ ::item.created | amTimeAgo }}</p><div class=\"img-right\" ng-if=\"item.img\">\n<img ng-src=\"{{ ::item.img._url }}\"></div></div></div><ion-infinite-scroll ng-if=\"!vm.loading && !vm.empty\" \non-infinite=\"vm.load()\"></ion-infinite-scroll></ion-content></ion-view>");
-$templateCache.put("app/module/photogram/module/chats/view/chats.html","<style>.unread {\n        font-weight: bold;\n    }</style><ion-view view-title=\"Chat\"><ion-nav-buttons side=\"right\"><i \nclass=\"button button-icon icon ion-gear-a\" ng-click=\"chatSettings($event)\"></i></ion-nav-buttons><ion-content><div \nng-show=\"!matches.length\" style=\"text-align: center;font-family:\'Avenir Next LT Pro Regular\';font-size:18px\"><br>\n{{\'NO_MATCHES\' | translate}}<br><br>{{\'START_SWIPING\' | translate}}!</div><div class=\"list\"><a \nclass=\"item item-avatar\" ng-repeat=\"match in matches track by match.id\" ui-sref=\"^.chat({matchId : match.id})\"><img \nng-src=\"{{::match.profile.photoUrl}}\" img-cache><h2>{{::match.profile.name}}</h2><p \nng-class=\"match.read ? \'\' : \'unread\'\" ng-bind-html=\"match.lastMessage | escapeHTML | emoji\"></a></div></ion-content>\n</ion-view>");
-$templateCache.put("app/module/photogram/module/direct/view/direct.home.html","<ion-view><ion-nav-title translate=\"DIRECT.TITLE\"></ion-nav-title><ion-nav-buttons side=\"right\"><button \nclass=\"button button-icon ion-ios-plus-empty\" ui-sref=\"photogram.direct\"></button></ion-nav-buttons><ion-content>\n<ion-list><ion-item class=\"item-avatar\" ng-repeat=\"item in vm.data\" ui-sref=\"photogram.message({channelId: item.id})\">\n<img ng-src=\"{{item.user.src}}\" alt=\"\"><h2>{{ item.user.name}}</h2><p>{{ item.msg }}</p></ion-item></ion-list>\n</ion-content></ion-view>");
-$templateCache.put("app/module/photogram/module/direct/view/direct.messages.html","<ion-view id=\"userMessagesView\" cache-view=\"false\" view-title=\"Messages\"><div class=\"loader-center\" \nng-if=\"!vm.doneLoading\"><div class=\"loader\"><i class=\"icon ion-loading-c\"></i></div></div><ion-content \nhas-bouncing=\"true\" class=\"has-header has-footer\" delegate-handle=\"userMessageScroll\"><ion-refresher \npulling-text=\"{{\'DIRECT.BUTTON.PULL\' | TRANSLATE}}\" on-refresh=\"vm.doRefresh()\"></ion-refresher><div \nng-repeat=\"message in vm.data.messages\" class=\"message-wrapper\" on-hold=\"onMessageHold($event, $index, message)\"><div \nng-if=\"vm.user.id === message.user.id\"><img class=\"profile-pic right\" ng-src=\"{{message.user.src}}\"><div \nclass=\"chat-bubble right\"><div class=\"message\" ng-bind-html=\"message.body | nl2br\" autolinker></div><div \nclass=\"message-detail\"><span class=\"bold\">{{message.user.name}}</span>, <span am-time-ago=\"message.date\"></span></div>\n</div></div><div ng-if=\"vm.user.id !== message.user.id\"><img class=\"profile-pic left\" ng-src=\"{{message.user.src}}\">\n<div class=\"chat-bubble left\"><div class=\"message\" ng-bind-html=\"message.body | nl2br\" autolinker></div><div \nclass=\"message-detail\"><span class=\"bold\">{{message.user.name}}</span>, <span am-time-ago=\"message.date\"></span></div>\n</div></div><div class=\"cf\"></div></div></ion-content><form name=\"sendMessageForm\" \nng-submit=\"vm.sendMessage(sendMessageForm, vm.model)\" novalidate><ion-footer-bar \nclass=\"bar-stable item-input-inset message-footer\" keyboard-attach><label class=\"item-input-wrapper\"><textarea \nng-model=\"vm.model.text\" placeholder=\"{{ \'DIRECT.FORM.PLACEHOLDER\' | TRANSLATE}}\" required minlength=\"1\" \nmaxlength=\"1500\" msd-elastic></textarea></label><div class=\"footer-btn-wrap\"><button \nclass=\"button button-icon icon ion-android-send footer-btn\" type=\"submit\"></button></div></ion-footer-bar></form>\n</ion-view>");
-$templateCache.put("app/module/photogram/module/discover/view/discover.html","<ion-view title=\"{{ \'MENU.DISCOVERY\' | translate }}\"><ion-content><ul class=\"list\"><li class=\"item item-toggle\">\n{{\'DISCOVERABLE\' | translate}}<label class=\"toggle\"><input type=\"checkbox\" ng-model=\"profile.enabled\"><div \nclass=\"track\"><div class=\"handle\"></div></div></label></li></ul><div class=\"item item-divider\">\n{{\'SHOW_ME\' | translate}}:</div><ul class=\"list\"><li class=\"item item-toggle\">{{\'GUYS\' | translate}}<label \nclass=\"toggle\"><input type=\"checkbox\" ng-model=\"profile.guys\"><div class=\"track\"><div class=\"handle\"></div></div>\n</label></li><li class=\"item item-toggle\">{{\'GIRLS\' | translate}}<label class=\"toggle\"><input type=\"checkbox\" \nng-model=\"profile.girls\"><div class=\"track\"><div class=\"handle\"></div></div></label></li><li class=\"item item-divider\">\n{{\'SEARCH_DISTANCE\' | translate}}: {{profile.distance}}{{profile.distanceType}}</li><li class=\"item\" \nstyle=\"height: 60px\"><slider floor=\"1\" ceiling=\"200\" ng-model-low=\"profile.distance\" ng-model-high=\"profile.distance\">\n</slider></li><li class=\"item item-divider\">\n{{\'AGED_BETWEEN\' | translate}}: {{profile.ageFrom}} to {{profile.ageTo == 55 ? \'55+\' : profile.ageTo}}</li><li \nclass=\"item\" style=\"height: 60px\"><slider floor=\"18\" ceiling=\"55\" ng-model-low=\"profile.ageFrom\" \nng-model-high=\"profile.ageTo\"></slider></li></ul><div style=\"width:100%;padding-left: 10px;padding-right: 10px\"><button\n class=\"button button-block button-positive\" ng-click=\"save()\">{{\'SAVE\' | translate}}</button> <button \nclass=\"button button-block button-light\" ng-click=\"cancel()\">{{\'CANCEL\' | translate}}</button></div></ion-content>\n</ion-view>");
-$templateCache.put("app/module/photogram/module/feedback/view/feedback.modal.html","<ion-modal-view class=\"modal-profile\"><ion-header-bar class=\"bar-dark\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closeModal()\"></button><div class=\"title\" \ntranslate=\"FEEDBACK.TITLE\"></div><button class=\"button button-positive\" ng-click=\"submitFeedback()\"><i \nclass=\"icon ion-arrow-right-b\"></i></button></ion-header-bar><ion-content><formly-form model=\"form\" form=\"rForm\" \nfields=\"formFields\"></formly-form></ion-content></ion-modal-view>");
-$templateCache.put("app/module/photogram/module/home/view/home.html","<ion-view class=\"view-home\"><ion-nav-title><span class=\"icon2-logo\"></span></ion-nav-title><ion-nav-buttons \nside=\"right\"><button class=\"button button-icon ion-ios-filing\" ui-sref=\"photogram.direct\"></button></ion-nav-buttons>\n<ion-content><ion-refresher ng-if=\"!vm.loading\" on-refresh=\"loadMore(true)\"></ion-refresher><photogram-loading \nloading=\"vm.loading\"></photogram-loading><photogram-photo-list profile=\"true\" photogram=\"vm.data\" loading=\"vm.loading\">\n</photogram-photo-list><div class=\"center-ico\" ng-if=\"vm.empty\"><i class=\"icon ion-ios-camera\"></i><h1 \ntranslate=\"HOME.TITLE.NO_PHOTO\"></h1></div><ion-infinite-scroll ng-if=\"!vm.loading && !vm.empty\" \non-infinite=\"vm.loadMore()\"></ion-infinite-scroll></ion-content></ion-view>");
-$templateCache.put("app/module/photogram/module/location/view/location.html","<ion-view view-title=\"{{\'SET_LOCATION\' | translate}}\" cache-view=\"false\"><ion-content><ul class=\"items\"><li \nclass=\"item item-toggle\">{{\'USE_GPS_LOCATION\' | translate}}<label class=\"toggle\"><input type=\"checkbox\" \nng-model=\"location.useGPS\" ng-change=\"useGPSchanged()\"><div class=\"track\"><div class=\"handle\"></div></div></label></li>\n</ul><div id=\"map\" data-tap-disabled=\"true\"></div></ion-content><ion-footer-bar><button ng-hide=\"location.useGPS\" \nclass=\"button button-block button-positive\" style=\"margin:0px\" ng-click=\"setLocation()\">{{\'SAVE\' | translate}}</button>\n</ion-footer-bar></ion-view>");
-$templateCache.put("app/module/photogram/module/likedme/view/likedme.html","<ion-view view-title=\"{{\'SETTINGS_TITLE\' | translate}}\" cache-view=\"false\"><ion-content><div class=\"list\"><div \nclass=\"item item-divider\">{{\'NOTIFICATION_SOUND\' | translate}}:</div><ion-toggle ng-model=\"profile.notifyMatch\" \ntoggle-class=\"toggle-calm\">{{\'NEW_MATCH\' | translate}}</ion-toggle><ion-toggle ng-model=\"profile.notifyMessage\" \ntoggle-class=\"toggle-calm\">{{\'NEW_MESSAGE\' | translate}}</ion-toggle><div class=\"item item-divider\">\n{{\'SHOW_DISTANCES_IN\' | translate}}:</div><ion-radio ng-model=\"profile.distanceType\" name=\"distanceType\" \nng-value=\"\'km\'\">Km</ion-radio><ion-radio ng-model=\"profile.distanceType\" name=\"distanceType\" ng-value=\"\'mi\'\">Mi\n</ion-radio><div class=\"item item-divider\">{{\'LANGUAGE\' | translate}}:</div><div style=\"width:100%;padding:2px\"><button\n ng-click=\"setLanguage(\'en\')\" class=\"button button-small button-stable\">English</button> <button \nng-click=\"setLanguage(\'de\')\" class=\"button button-small button-stable\">Deutch</button></div></div><br><div \nclass=\"wide center padding-10\"><button class=\"button button-block button-positive\" ng-click=\"save()\" translate=\"SAVE\">\n</button> <button class=\"button button-block button-stable\" ng-click=\"deleteUnmatchedSwipes()\">Delete Unmatched Swipes\n</button> <button class=\"button button-block button-stable\" ng-click=\"logout()\" translate=\"LOGOUT\"></button> <button \nclass=\"button button-block button-assertive\" ng-click=\"deleteAccount()\" translate=\"DELETE_ACCOUNT\"></button></div><div \nclass=\"wide center padding-10 bold\" ng-click=\"debug()\">\n{{\'VERSION\' | translate}}: {{::(appVersion ? appVersion : \'N/A\')}}</div></ion-content></ion-view>");
-$templateCache.put("app/module/photogram/module/photo/view/photogram.photo.html","<ion-view view-title=\"Photo\"><ion-content><div class=\"list card step1\"><div class=\"item item-avatar\" \ndata-affix-within-parent-with-class=\"card\" ion-affix><img ng-src=\"{{vm.data.user.img}}\"><h2>{{vm.data.user.name}}</h2>\n<span>{{vm.data.created | amTimeAgo}}</span></div><div class=\"item item-body\"><img ng-src=\"{{vm.data.img._url}}\" \nstyle=\"width: 100%\"></div><div class=\"padding\"><p>{{ vm.data.title }}</p><p><a class=\"subdued\" href=\"#\">\n1 {{ \'Like\' | translate}}</a></p></div></div><div class=\"list\"><div ng-repeat=\"item in vm.comments\" \nclass=\"item item-avatar\"><img ng-src=\"{{ item.user.img }}\"><h2>{{ item.user.name }}</h2><p>{{ item.text }}</p></div>\n</div><div class=\"step2\"><formly-form model=\"vm.form\" fields=\"vm.formFields\" form=\"rForm\"><div class=\"padding\"><button \nclass=\"button button-block button-positive\" type=\"button\" ng-click=\"vm.submitComment(rForm, vm.form)\" translate>Comment\n</button></div></formly-form></div></ion-content></ion-view>");
-$templateCache.put("app/module/photogram/module/photo/view/photogram.popover.home.html","<ion-popover-view><ion-content><div class=\"list\"><div class=\"item\" ui-sref=\"gallery.settings\" translate>Settings</div>\n<div class=\"item\" ui-sref=\"gallery.settings\" translate>About</div></div></ion-content></ion-popover-view>");
-$templateCache.put("app/module/photogram/module/search/view/photo.modal.html","<ion-modal-view class=\"modal-profile photogram-profile\"><ion-header-bar class=\"bar-positive\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closeModal()\"></button><div class=\"title\">\n{{ user.name }}</div></ion-header-bar><ion-content overflow-scroll=\"true\"><div class=\"profile-top\"><div class=\"row\">\n<div class=\"col-25\"><img class=\"avatar\" ng-src=\"{{ user.src }}\"></div><div class=\"col col-statics\"><div class=\"row\">\n<div class=\"col\"><photogram-loading loading=\"loadingPhotos\"></photogram-loading><span ng-if=\"!loadingPhotos\" \nclass=\"text-center\">{{ user.qtdPhotos }}</span><h3 translate=\"PHOTOGRAM.PROFILE.TITLE.POST\">Posts</h3></div><div \nclass=\"col\"><photogram-loading loading=\"loadingFollowers\"></photogram-loading><span ng-if=\"!loadingFollowers\" \nclass=\"text-center\">{{ user.qtdFollowers }}</span><h3 translate=\"PHOTOGRAM.PROFILE.TITLE.FOLLOWER\"></h3></div><div \nclass=\"col\"><photogram-loading loading=\"loadingFollowing\"></photogram-loading><span ng-if=\"!loadingFollowing\" \nclass=\"text-center\">{{ user.qtdFollowing }}</span><h3 translate=\"PHOTOGRAM.PROFILE.TITLE.FOLLOWING\">Followings</h3>\n</div></div><div class=\"row col-edit\"><div class=\"col\"><photogram-loading loading=\"loadingFollow\"></photogram-loading>\n<button ng-if=\"!loadingFollow\" ng-class=\"{\'button-unfollow\': user.follow, \'button-follow\': !user.follow}\" \nng-click=\"follow()\" class=\"button\"><span ng-show=\"!user.follow\" translate>Follow</span> <span ng-show=\"user.follow\" \ntranslate>Following</span></button></div></div></div></div><div class=\"padding\"><span class=\"user-username\">\n{{ user.name }}</span><p class=\"user-status\">{{ user.status }}</p></div></div></ion-content></ion-modal-view>");
-$templateCache.put("app/module/photogram/module/search/view/photogram.search.grid.html","<ion-view cache-view=\"false\"><ion-nav-title><ion-search class=\"search-wrapper-light\" \nplaceholder=\"{{ \'SEARCH.FORM.INPUT\' | translate }}\" min-length=\"1\" model=\"GallerySearchGrid.data\" \nsource=\"GallerySearchGrid.load\"></ion-search></ion-nav-title><ion-content class=\"photogram-search\"><ion-refresher \nng-if=\"!vm.loading\" on-refresh=\"loadMore(true)\"></ion-refresher><photogram-loading loading=\"vm.loading\">\n</photogram-loading><photogram-photo-grid profile=\"true\" photogram=\"vm.data\" loading=\"vm.loading\">\n</photogram-photo-grid><div class=\"center-ico\" ng-if=\"vm.empty\"><i class=\"icon ion-ios-camera\"></i></div>\n<ion-infinite-scroll ng-if=\"!vm.loading && !vm.empty\" on-infinite=\"vm.loadMore()\"></ion-infinite-scroll></ion-content>\n</ion-view>");
-$templateCache.put("app/module/photogram/module/search/view/photogram.search.map.html","<ion-view class=\"maps-view\"><ion-nav-title translate=\"SEARCH.TITLE_MAP\"></ion-nav-title><ion-nav-buttons side=\"right\">\n<button ng-click=\"vm.location()\" class=\"button button-icon icon ion-pinpoint\"></button></ion-nav-buttons><ion-content \nscroll=\"false\"><div class=\"map-container\"><ui-gmap-google-map center=\"map.center\" zoom=\"map.zoom\"><ui-gmap-marker \nidkey=\"0\" coords=\"vm.user\"></ui-gmap-marker><ui-gmap-marker click=\"vm.openModal(item)\" idkey=\"item.id\" \ncoords=\"item.coords\" icon=\"item.icon\" ng-repeat=\"item in vm.data\"></ui-gmap-marker></ui-gmap-google-map></div>\n</ion-content></ion-view>");
-$templateCache.put("app/module/photogram/module/search/view/photogram.search.tabs.html","<ion-view title=\"Search\" class=\"view-tab\"><ion-nav-title><h1 class=\"title\" translate=\"SEARCH.TITLE\"></h1>\n</ion-nav-title><ion-tabs class=\"tabs-top tabs-positive tabs-striped\"><ion-tab \ntitle=\"{{\'SEARCH.TITLE_LIST\' | translate}}\" icon=\"ion-grid\" ui-sref=\"photogram.search.grid\"><ion-nav-view \nname=\"tabGrid\"></ion-nav-view></ion-tab><ion-tab title=\"{{\'SEARCH.TITLE_MAP\' | translate }}\" icon=\"ion-map\" \nui-sref=\"photogram.search.map\"><ion-nav-view name=\"tabMap\"></ion-nav-view></ion-tab></ion-tabs></ion-view>");
-$templateCache.put("app/module/photogram/module/setting/view/setting.html","<ion-view view-title=\"{{\'SETTINGS_TITLE\' | translate}}\" cache-view=\"false\"><ion-content><div class=\"list\"><div \nclass=\"item item-divider\">{{\'NOTIFICATION_SOUND\' | translate}}:</div><ion-toggle ng-model=\"profile.notifyMatch\" \ntoggle-class=\"toggle-calm\">{{\'NEW_MATCH\' | translate}}</ion-toggle><ion-toggle ng-model=\"profile.notifyMessage\" \ntoggle-class=\"toggle-calm\">{{\'NEW_MESSAGE\' | translate}}</ion-toggle><div class=\"item item-divider\">\n{{\'SHOW_DISTANCES_IN\' | translate}}:</div><ion-radio ng-model=\"profile.distanceType\" name=\"distanceType\" \nng-value=\"\'km\'\">Km</ion-radio><ion-radio ng-model=\"profile.distanceType\" name=\"distanceType\" ng-value=\"\'mi\'\">Mi\n</ion-radio><div class=\"item item-divider\">{{\'LANGUAGE\' | translate}}:</div><div style=\"width:100%;padding:2px\"><button\n ng-click=\"setLanguage(\'en\')\" class=\"button button-small button-stable\">English</button> <button \nng-click=\"setLanguage(\'de\')\" class=\"button button-small button-stable\">Deutch</button></div></div><br><div \nclass=\"wide center padding-10\"><button class=\"button button-block button-positive\" ng-click=\"save()\" translate=\"SAVE\">\n</button> <button class=\"button button-block button-stable\" ng-click=\"deleteUnmatchedSwipes()\">Delete Unmatched Swipes\n</button> <button class=\"button button-block button-stable\" ng-click=\"logout()\" translate=\"LOGOUT\"></button> <button \nclass=\"button button-block button-assertive\" ng-click=\"deleteAccount()\" translate=\"DELETE_ACCOUNT\"></button></div><div \nclass=\"wide center padding-10 bold\" ng-click=\"debug()\">\n{{\'VERSION\' | translate}}: {{::(appVersion ? appVersion : \'N/A\')}}</div></ion-content></ion-view>");
-$templateCache.put("app/module/photogram/module/share/view/photogram.post.modal.html","<ion-modal-view class=\"modal-post\"><ion-header-bar class=\"bar-dark\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closePost()\"></button><div class=\"title\" \ntranslate=\"SHARE.TITLE\"></div><button class=\"button button-positive\" ng-click=\"submitPost(form)\"><i \nclass=\"icon ion-arrow-right-b\"></i></button></ion-header-bar><ion-content><div id=\"image\"><img ng-src=\"{{form.photo}}\">\n</div><ul class=\"list\"><li class=\"item\"><textarea type=\"text\" ng-model=\"form.title\" autofocus \nplaceholder=\"{{ \'SHARE.FORM.LEGEND\' | translate }}\"></textarea></li><li class=\"item item-input\" \nng-show=\"form.geo.image\"><input type=\"text\" placeholder=\"{{ \'SHARE.FORM.LOCATION\' | translate }}\" ion-location \nlocation=\"form.geo\" ng-model=\"form.geo.resume\"></li><li class=\"item nopadding\" ng-show=\"form.geo.image\"><img \nng-src=\"{{ form.geo.image }}\"></li></ul></ion-content></ion-modal-view>");
-$templateCache.put("app/module/photogram/module/share/view/photogram.share.modal.html","<ion-modal-view class=\"modal-share\"><ion-header-bar class=\"bar-dark\"><button \nclass=\"button button-clear button-icon ion-ios-arrow-thin-left\" ng-click=\"closeShare()\"></button><div class=\"title\" \ntranslate=\"SHARE.TITLE\"></div><button class=\"button button-positive\" ng-click=\"submitShare(form, social)\"><i \nclass=\"icon ion-arrow-right-b\"></i></button></ion-header-bar><ion-content><div class=\"list\"><div \nclass=\"item item-thumbnail-left\" href=\"#\"><img ng-src=\"{{form.photo}}\" id=\"image\"><textarea type=\"text\" \nng-model=\"form.title\" placeholder=\"{{ \'SHARE.FORM.LEGEND\'|translate }}\"></textarea></div></div><ul class=\"list\"><li \nclass=\"item item-input\"><input type=\"text\" placeholder=\"{{ \'SHARE.FORM.LOCATION\' | translate }}\" ion-location \nlocation=\"form.geo\" ng-model=\"form.geo.resume\"></li><div class=\"item nopadding\" ng-show=\"form.geo.image\"><img \nng-src=\"{{ form.geo.image }}\"></div></ul><ul class=\"list\"><li class=\"item item-divider\" \ntranslate=\"SHARE.FORM.SHARE_IN\"></li><li class=\"item item-icon-left item-toggle\" ng-repeat=\"social in socials\"><i \nclass=\"icon ion-social-{{ social.title | lowercase }}\"></i> {{ social.title }}<label class=\"toggle toggle-positive\">\n<input type=\"checkbox\" ng-model=\"social.checked\"><div class=\"track\"><div class=\"handle\"></div></div></label></li></ul>\n</ion-content></ion-modal-view>");
-$templateCache.put("app/module/photogram/module/swipe/view/swipe.html","<ion-view view-title=\"{{::appName}}\"><ion-nav-buttons side=\"right\"><i \nclass=\"button button-icon icon ion-ios-chatbubble-outline\" ui-sref=\"photogram.chats\"><span ng-show=\"unreadChats > 0\" \nclass=\"badge badge-assertive nav-icon-badge\">{{unreadChats}}</span></i></ion-nav-buttons><ion-content class=\"padding\" \nstyle=\"padding-top:100px;padding-top:5vw;text-align:center\" no-scroll><style>\n@-webkit-keyframes fade_out_animation {\n        0% { -webkit-transform: scale(1); }\n        100% { -webkit-transform: scale(2);  opacity: 0;  }\n      }\n\n      .imgOverlay{\n        position: absolute;\n        margin-left: auto;\n        margin-right: auto;\n        left: 0;\n        right: 0;\n      }\n\n      .imgCircle{\n        width: 150px;\n        height: 150px;\n        border-radius: 150px;\n        -webkit-border-radius: 150px;\n        -moz-border-radius: 150px;\n      }\n\n      .verticalAlign{\n        position: relative;\n        top: 50%;\n        transform: translateY(-50%);\n        width:100%;\n        margin:0 auto;\n      }\n\n      \n\n      .fade-out {\n        animation-name: \'fade_out_animation\';\n        animation-duration: 2000ms;\n        animation-iteration-count: infinite;\n        animation-timing-function: linear;\n        -webkit-animation-name: \'fade_out_animation\';\n        -webkit-animation-duration: 2000ms;\n        -webkit-animation-iteration-count: infinite;\n        -webkit-animation-timing-function: linear;\n        -moz-animation-name: \'fade_out_animation\';\n        -moz-animation-duration: 2000ms;\n        -moz-animation-iteration-count: infinite;\n        -moz-animation-timing-function: linear;\n        transition: opacity 2s\n      }\n</style><div></div><div ng-if=\"!profile.enabled\" class=\"text-label\" style=\"padding-top:50px;padding-top:20vw\"><div \nstyle=\"font-size: 24px; font-size: 8vw\">{{\'NOT_DISCOVERABLE\' | translate}}</div><div \nstyle=\"font-size: 14px;font-size: 4vw;padding-top: 5px\">{{\'ENABLE_DISCOVERY_TO_MEET\' | translate}}</div><button \nclass=\"button button-block\" ng-click=\"enableDiscovery()\">{{\'ENABLE_DISCOVERY\' | translate}}</button><br><br><div \nng-show=\"!profile.photos.length\"><br><div style=\"font-size: 20px; font-size: 6vw\">You don\'t have a profile picture yet\n</div><button class=\"button button-block\" ui-sref=\"photogram.account\">Edit Profile</button></div></div><div \nng-show=\"profile.enabled\"><div class=\"verticalAlign\" ng-show=\"!matches\" style=\"padding-top:150px;padding-top:45vw\"><img\n class=\"imgOverlay fade-out\" style=\"width:150px\" src=\"img/ring.png\"><img class=\"photo imgCircle imgOverlay\" img-cache \nng-src=\"{{::profilePhoto}}\"></div><div ng-show=\"!matches || matches.length==0\" \nstyle=\"padding-top:150px;padding-top:45vw\"><div class=\"verticalAlign text-label\" ng-show=\"!matches\">\n{{\'FINDING_PEOPLE\' | translate}}</div><div class=\"verticalAlign text-label\" style=\"font-size: 16px;font-size: 5.5vw\" \nng-show=\"matches.length == 0\">{{\'NO_ONE_NEW\' | translate}}<br><br><button class=\"button\" ng-click=\"searchAgain()\">\n{{\'SEARCH_AGAIN\' | translate}}</button></div></div><td-cards><td-card ng-if=\"$index >= matches.length - 2\" \nng-show=\"matches\" ng-repeat=\"match in matches track by $index\" on-destroy=\"cardDestroyed($index)\" \non-transition-left=\"cardTransitionLeft(match)\" on-transition-right=\"cardTransitionRight(match)\" \nclass=\"card-{{$index}}\" ng-class=\"{\'accepted-transform\': match.accepted, \'rejected-transform\': match.rejected}\"><div \nclass=\"image\" ng-click=\"viewDetails(match)\"><div class=\"yes-text\" ng-style=\"leftTextOpacity\">{{\'LIKE\' | translate}}\n</div><img style=\"width:100%\" ng-src=\"{{::match.image}}\"><div class=\"no-text\" ng-style=\"rightTextOpacity\">\n{{\'NOT_LIKE\' | translate}}</div></div><div>{{match.name}}</div></td-card></td-cards><div class=\"list\" \nng-if=\"searchLayout == \'list\'\"><a class=\"item item-thumbnail-left\" style=\"text-align: left\" \nng-repeat=\"match in matches track by $index\" ng-click=\"viewDetails(match)\"><img ng-src=\"{{::match.image}}\" img-cache>\n<h2>{{::match.name}}, {{::match.age}}</h2><p>{{match.location | distance}} {{\'AWAY\' | translate}}<br>{{match.about}}\n</p></a></div><div class=\"row\" ng-repeat=\"match in matches track by $index\" \nng-if=\"searchLayout == \'grid\' && $index % 2 == 0\"><div class=\"col\"><div class=\"list card\" \nng-click=\"viewDetails(match)\"><div class=\"item item-image\"><img ng-src=\"{{::match.image}}\"></div><a \nclass=\"item item-icon-left item-icon-right\">{{::match.name}}</a></div></div><div class=\"col\"><div class=\"list card\" \nng-click=\"viewDetails(matches[index+1])\" ng-if=\"$index+1 < matches.length\"><div class=\"item item-image\"><img \nng-src=\"{{::matches[index+1].image}}\"></div><a class=\"item item-icon-left item-icon-right\">{{::matches[index+1].name}}\n</a></div></div></div><div class=\"list card\" ng-repeat=\"match in matches track by $index\" \nng-if=\"searchLayout == \'card\'\" ng-click=\"viewDetails(match)\"><div class=\"item item-image\"><img \nng-src=\"{{::match.image}}\"></div><a class=\"item item-icon-left item-icon-right\" href=\"#\"><i style=\"float:left\" \nclass=\"button button-icon icon ion-android-close assertive\" ng-click=\"reject()\"></i> {{::match.name}} <i \nstyle=\"float:right\" class=\"button button-icon icon ion-ios-heart-outline assertive\" ng-click=\"like()\"></i></a></div>\n<div ng-show=\"matches.length > 0\" class=\"swipe-buttons\"><div class=\"row\"><div class=\"col\"><a \nclass=\"button button-icon\" ng-click=\"reject()\"><i class=\"icon ion-ios-close-outline swipe-button swipe-reject\"></i></a>\n</div><div class=\"col\"><a class=\"button button-icon\" ng-click=\"accept()\"><i \nclass=\"icon ion-ios-checkmark-outline swipe-button swipe-accept\"></i></a></div></div></div></div></ion-content>\n</ion-view>");}]);
+$templateCache.put("app/module/user/module/signin/view/user.signin.html","<ion-view class=\"view-login\" view-title=\"{{ ::\'USER.BUTTON.ENTER\' | translate }}\"><ion-content padding=\"false\"><div \nclass=\"padding\"><formly-form model=\"vm.form\" fields=\"vm.formFields\" form=\"vm.rForm\"><button recovery-pass \nclass=\"button button-right button-block button-clear\"><span></span></button> <button \nclass=\"button button-block button-positive\" type=\"button\" ng-disabled=\"vm.rForm.$invalid\" \nng-click=\"vm.submitLogin(vm.rForm, vm.form)\" translate=\"USER.BUTTON.ENTER\"></button></formly-form><div class=\"line\">\n<div class=\"left\"></div><span translate=\"USER.OR\">or</span><div class=\"right\"></div></div><button \nng-click=\"vm.facebook()\" class=\"button button-block button-facebook\"><i class=\"icon ion-social-facebook\"></i> <span>\n{{ ::\'USER.BUTTON.LOGIN_SOCIAL\'| translate}}Facebook</span></button></div></ion-content></ion-view>");
+$templateCache.put("app/module/photogram/module/location/view/location.html","<ion-view view-title=\"{{\'SET_LOCATION\' | translate}}\" cache-view=\"false\"><ion-content><ul class=\"items\"><li \nclass=\"item item-toggle\">{{\'USE_GPS_LOCATION\' | translate}}<label class=\"toggle\"><input type=\"checkbox\" \nng-model=\"location.useGPS\" ng-change=\"useGPSchanged()\"><div class=\"track\"><div class=\"handle\"></div></div></label></li>\n</ul><div id=\"map\" data-tap-disabled=\"true\"></div></ion-content><ion-footer-bar><button ng-hide=\"location.useGPS\" \nclass=\"button button-block button-positive\" style=\"margin:0px\" ng-click=\"setLocation()\">{{\'SAVE\' | translate}}</button>\n</ion-footer-bar></ion-view>");}]);

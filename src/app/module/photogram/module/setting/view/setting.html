@@ -7,26 +7,28 @@
               {{'NOTIFICATION_SOUND' | translate}}:
           </div>
 
-          <ion-toggle ng-model="profile.notifyMatch" toggle-class="toggle-calm">{{'NEW_MATCH' | translate}}</ion-toggle>
+          <ion-toggle ng-model="form.notifyMatch" toggle-class="toggle-calm">{{'NEW_MATCH' | translate}}</ion-toggle>
 
-          <ion-toggle ng-model="profile.notifyMessage" toggle-class="toggle-calm">{{'NEW_MESSAGE' | translate}}</ion-toggle>
+          <ion-toggle ng-model="form.notifyMessage" toggle-class="toggle-calm">{{'NEW_MESSAGE' | translate}}</ion-toggle>
 
           <div class="item item-divider">
               {{'SHOW_DISTANCES_IN' | translate}}:
           </div>
 
-          <ion-radio ng-model="profile.distanceType" name="distanceType" ng-value="'km'">Km</ion-radio>
+          <ion-radio ng-model="form.distanceType" name="distanceType" ng-value="'km'">Km</ion-radio>
 
-          <ion-radio ng-model="profile.distanceType" name="distanceType" ng-value="'mi'">Mi</ion-radio>
+          <ion-radio ng-model="form.distanceType" name="distanceType" ng-value="'mi'">Mi</ion-radio>
 
-          <div class="item item-divider">
-              {{'LANGUAGE' | translate}}:
-          </div>
-
-          <div style="width:100%;padding:2px">
-            <button ng-click="setLanguage('en')" class="button button-small button-stable">English</button>
-            <button ng-click="setLanguage('de')" class="button button-small button-stable">Deutch</button>
-          </div>
+          <label class="item item-input item-select item-divider">
+                <div class="input-label" style="z-index: 2;">
+                    <h2 translate="PHOTOGRAM.BUTTON.CHANGE_LANGUAGE"></h2>
+                </div>
+                <select ng-model="language"
+                        ng-change="changeLanguage(language)"
+                        >
+                    <option ng-repeat="item in languages" value="{{ ::item.code}}" translate="{{ ::item.translation}}"></option>
+                </select>
+            </label>
       </div>
 
       <br/>
@@ -36,10 +38,6 @@
           <button class="button button-block button-stable" ng-click="deleteUnmatchedSwipes()">Delete Unmatched Swipes</button>
           <button class="button button-block button-stable" ng-click="logout()" translate="LOGOUT"></button>
           <button class="button button-block button-assertive" ng-click="deleteAccount()" translate="DELETE_ACCOUNT"></button>
-      </div>
-
-      <div class="wide center padding-10 bold" ng-click="debug()">
-          {{'VERSION' | translate}}: {{::(appVersion ? appVersion : 'N/A')}}
       </div>
   </ion-content>
 </ion-view>

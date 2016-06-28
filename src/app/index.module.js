@@ -20,12 +20,8 @@
       'app.loading',
       'app.user',
       'app.photogram',
-      'app.swipe',
-      'app.location',
-      'app.chats',
-      'app.setting',
-      'app.likedme',
-      'ui.slider'
+      'ui.slider',
+      'emoji'
     ]);
 
 })();
